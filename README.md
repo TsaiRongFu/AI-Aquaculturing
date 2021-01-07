@@ -120,7 +120,7 @@ export PYTHONPATH=/home/itriedgetpunpust/ipynb/TsaiJungFu/cai-train-path/models:
   [use_protobuf.py](https://trello.com/1/cards/5e95106ac42ee761ec1a911d/attachments/5e957d679b6f7a4c7d04c68a/download?backingUrl=https%3A%2F%2Ftrello-attachments.s3.amazonaws.com%2F5e6856f39a79a12665199a15%2F5e95106ac42ee761ec1a911d%2Fa6624a2e61cbf0896f81f551275073fb%2Fuse_protobuf.py)
 
 - 打開您的Command OR Terminal並輸入以下指令：
-  - cd 至 use_protobuf.py
+  - cd 至 use_protobuf.py檔案資料夾底下
   - Key入以下指令 **注意空白符號**
 
     ```
