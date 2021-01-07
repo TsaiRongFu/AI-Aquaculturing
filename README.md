@@ -106,6 +106,7 @@ set PYTHONPATH=C:\Users\RONGF\Desktop\modle\models;C:\Users\RONGF\Desktop\modle\
 ```
 export PYTHONPATH=/home/itriedgetpunpust/ipynb/TsaiJungFu/cai-train-path/models:/home/itriedgetpunpust/ipynb/TsaiJungFu/cai-train-path/models/research:/home/itriedgetpunpust/ipynb/TsaiJungFu/cai-train-path/models/research/slim
 ```
+<br>
 
 * 使用 protoc Bullding 檔案
 
