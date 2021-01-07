@@ -21,7 +21,7 @@ Thematic works of four students from the Department of Information Management, N
 
   當您安裝完成Anaconda後，我們開始創建一個新的環境
 
-  打開您的Command OR Terminal並輸入以下指令，創建名為train的新環境python版本為3.5
+  打開您的Command OR Terminal並輸入以下指令，創建名為train的新環境python版本為3.5\<br>
   
   `conda create -n train pip python=3.5`  
   
