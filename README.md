@@ -84,24 +84,59 @@ Thematic works of four students from the Department of Information Management, N
 
 ---
 
-- 打開Command :
- - cd models\research
- - Key入以下指令
- - 每次重開command都要重設一次環境變數
- - 或是直接寫到環境變數裡面去
- - **接下來所有路徑位置都要替換成自己得路徑位置**
+  - 打開Command :
+  - 要設定的環境變數有 models、research、slim
+  - Key入以下指令
+  - 每次重開command都要重設一次環境變數
+  - 直接寫到環境變數裡面去就不用每次都重設
+  - **接下來所有路徑位置都要替換成自己得路徑位置**
+
+<br>
+
+### Windows環境 
+
+<br>
 
 ```
 set PYTHONPATH=C:\Users\RONGF\Desktop\modle\models;C:\Users\RONGF\Desktop\modle\models\research;C:\Users\RONGF\Desktop\modle\models\research\slim
 ```
 
- - Linux環境
+### Linux環境
+
+<br>
 
 ```
 export PYTHONPATH=/home/itriedgetpunpust/ipynb/TsaiJungFu/cai-train-path/models:/home/itriedgetpunpust/ipynb/TsaiJungFu/cai-train-path/models/research:/home/itriedgetpunpust/ipynb/TsaiJungFu/cai-train-path/models/research/slim
 ```
 
----
+* 使用 protoc Bullding 檔案
+
+接著到下列網址下載protobuf工具(依照自身作業系統下載)
+
+https://github.com/protocolbuffers/protobuf/releases
+
+接著下載use_protobuf.py檔，以下網址洛失效至專案檔裡Bullding資料夾內找
+
+[use_protobuf.py](https://trello.com/1/cards/5e95106ac42ee761ec1a911d/attachments/5e957d679b6f7a4c7d04c68a/download?backingUrl=https%3A%2F%2Ftrello-attachments.s3.amazonaws.com%2F5e6856f39a79a12665199a15%2F5e95106ac42ee761ec1a911d%2Fa6624a2e61cbf0896f81f551275073fb%2Fuse_protobuf.py)
+
+- 打開Command :
+ - cd 至 use_protobuf.py
+ - Key入以下指令 **注意空白符號**
+
+```
+python use_protobuf.py 指定到剛剛下載的models下的protos 在指定存放protobuf工具的路徑
+```
+
+ 範例
+
+
+```
+python use_protobuf.py models/research/object_detection/protos C:/Users/Eggs Desktop/tensorflow/bin/protoc
+ ```
+
+
+
+當您準備好protocolbu並且把.protobuf檔轉成.py檔後
 
 - 打開Command :
  - cd models\research
@@ -111,25 +146,7 @@ export PYTHONPATH=/home/itriedgetpunpust/ipynb/TsaiJungFu/cai-train-path/models:
 protoc --python_out=. .\object_detection\protos\anchor_generator.proto .\object_detection\protos\argmax_matcher.proto .\object_detection\protos\bipartite_matcher.proto .\object_detection\protos\box_coder.proto .\object_detection\protos\box_predictor.proto .\object_detection\protos\eval.proto .\object_detection\protos\faster_rcnn.proto .\object_detection\protos\faster_rcnn_box_coder.proto .\object_detection\protos\grid_anchor_generator.proto .\object_detection\protos\hyperparams.proto .\object_detection\protos\image_resizer.proto .\object_detection\protos\input_reader.proto .\object_detection\protos\losses.proto .\object_detection\protos\matcher.proto .\object_detection\protos\mean_stddev_box_coder.proto .\object_detection\protos\model.proto .\object_detection\protos\optimizer.proto .\object_detection\protos\pipeline.proto .\object_detection\protos\post_processing.proto .\object_detection\protos\preprocessor.proto .\object_detection\protos\region_similarity_calculator.proto .\object_detection\protos\square_box_coder.proto .\object_detection\protos\ssd.proto .\object_detection\protos\ssd_anchor_generator.proto .\object_detection\protos\string_int_label_map.proto .\object_detection\protos\train.proto .\object_detection\protos\keypoint_box_coder.proto .\object_detection\protos\multiscale_anchor_generator.proto .\object_detection\protos\graph_rewriter.proto .\object_detection\protos\calibration.proto .\object_detection\protos\flexible_grid_anchor_generator.proto
 ```
 
-~~接著到下列網址下載protobuf工具(依照自身作業系統下載)~~
 
-~~https://github.com/protocolbuffers/protobuf/releases~~
-
-~~接著下載use_protobuf.py檔~~
-
-~~[use_protobuf.py](https://trello.com/1/cards/5e95106ac42ee761ec1a911d/attachments/5e957d679b6f7a4c7d04c68a/download?backingUrl=https%3A%2F%2Ftrello-attachments.s3.amazonaws.com%2F5e6856f39a79a12665199a15%2F5e95106ac42ee761ec1a911d%2Fa6624a2e61cbf0896f81f551275073fb%2Fuse_protobuf.py)~~ 
-
-~~- 打開Command :~~
-~~ - cd 至 use_protobuf.py~~
-~~ - Key入以下指令~~
-~~ - python use_protobuf.py models/research/object_detection/protos~~
-~~C:/Users/Eggs/Desktop/tensorflow/bin/protoc~~
-
-~~```
-    python use_protobuf.py 指定到剛剛下載的models下的protos 在指定存放protobuf工具的路徑
-```~~
-
-當您準備好protocolbu並且把.protobuf檔轉成.py檔後
 
 ---
 
