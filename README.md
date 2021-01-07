@@ -157,7 +157,7 @@ export PYTHONPATH=/home/itriedgetpunpust/ipynb/TsaiJungFu/cai-train-path/models:
   - python setup.py build
   - python setup.py install
 
-***Windows、Linux在install時錯誤把請用python3.6環境進行build、install、install**
+**Windows、Linux在install時錯誤把請用python3.6環境進行build、install、install**
 
 ---
 
@@ -176,7 +176,8 @@ export PYTHONPATH=/home/itriedgetpunpust/ipynb/TsaiJungFu/cai-train-path/models:
   - Key入以下指令
   - jupyter notebook object_detection_tutorial.ipynb
 
-**執行此object_detection_tutorial.ipynb如果有出現圖片如下圖就表示您環境配置成功囉**
+
+### 執行此object_detection_tutorial.ipynb如果有出現圖片如下圖就表示您環境配置成功囉！！
 
 ![object_detection_tutorial](https://github.com/cairongfu/AI-Aquaculturing/blob/main/Bullding/object_detection_tutorial.png)
 
