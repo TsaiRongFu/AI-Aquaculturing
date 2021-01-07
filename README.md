@@ -85,7 +85,6 @@ Thematic works of four students from the Department of Information Management, N
   - 每次重開command都要重設一次環境變數
   - 直接寫到環境變數裡面去就不用每次都重設
   - **接下來所有路徑位置都要替換成自己得路徑位置**
-
 <br>
 
 ### Windows環境 
