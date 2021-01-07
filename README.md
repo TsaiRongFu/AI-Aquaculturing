@@ -4,6 +4,16 @@ A project that uses a camera to combine artificial intelligence and image recogn
 
 Thematic works of four students from the Department of Information Management, National Pingtung University of Science and Technology
 
+#首先配置系統環境
+
+
+* 安裝Anaconda
+  https://www.anaconda.com/products/individual
+
+  配置Anacond主要是為了簡單化安裝必要用到之套件，減少新手配置環境變數遇到之困難，另外Anaconda有著Managing environments，確保當環境配置出錯時不影響主系統
+
+
+
 # 參考這篇教學文件
 
 https://gilberttanner.com/blog/convert-your-tensorflow-object-detection-model-to-tensorflow-lite
