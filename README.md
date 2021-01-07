@@ -4,7 +4,7 @@ A project that uses a camera to combine artificial intelligence and image recogn
 
 Thematic works of four students from the Department of Information Management, National Pingtung University of Science and Technology
 
-#首先配置系統環境
+# 首先配置系統環境
 
 
 * 安裝Anaconda
