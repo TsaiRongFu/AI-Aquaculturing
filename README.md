@@ -74,9 +74,6 @@ Thematic works of four students from the Department of Information Management, N
    * 打開您的Command OR Terminal並輸入以下指令
 
      `git clone https://github.com/tensorflow/models.git`
-
-<br>
-
 ---
 
 <br>
@@ -84,11 +81,11 @@ Thematic works of four students from the Department of Information Management, N
 ## 開始配置環境變數
 
   - 打開您的Command OR Terminal並輸入以下指令：
-  - 要設定的環境變數有 models、research、slim
-  - Key入以下指令
-  - 每次重開command都要重設一次環境變數
-  - 直接寫到環境變數裡面去就不用每次都重設
-  - **接下來所有路徑位置都要替換成自己得路徑位置**
+    - 要設定的環境變數有 models、research、slim
+    - Key入以下指令
+    - 每次重開command都要重設一次環境變數
+    - 直接寫到環境變數裡面去就不用每次都重設
+    - **接下來所有路徑位置都要替換成自己得路徑位置**
 
 ### Windows環境 
 
@@ -141,7 +138,7 @@ export PYTHONPATH=/home/itriedgetpunpust/ipynb/TsaiJungFu/cai-train-path/models:
 <br>
 
 - Windows成功下載protobuf檔案後解壓縮會出現bin資料夾，在環境變數中設定bin路徑
-  - 打開您的Command OR Terminal並輸入以下指令：:
+  - 打開您的Command OR Terminal並輸入以下指令：
   - cd models\research
   - Key入以下指令
 
@@ -152,26 +149,32 @@ export PYTHONPATH=/home/itriedgetpunpust/ipynb/TsaiJungFu/cai-train-path/models:
 **完成後你會在models\research\object_detection\protos資料夾底下看到相同檔名副檔名為.py之檔案**
 
 
----
+- 打開您的Command OR Terminal並輸入以下指令：
+  - cd 到您剛剛git clone 下來的models/research
+  - Key入以下指令
+  - python setup.py build
+  - python setup.py install
 
-- 打開Command :
- - cd 到您剛剛git clone 下來的models/research
- - Key入以下指令
- - python setup.py build
- - python setup.py install
-
-Linux在install時錯誤把python更新到3.6
+***Windows、Linux在install時錯誤把請用python3.6環境進行build、install、install**
 
 ---
 
-下載此ipynb檔並取代原來的object_detection_tutorial ipynb檔
+<br>
+
+## 測試
+
+下載此ipynb檔並取代原來models\research\object_detection底下的object_detection_tutorial ipynb檔
+
+以下網址若失效至專案檔裡Bullding資料夾內找
 
 [object_detection_tutorial.ipynb](https://trello-attachments.s3.amazonaws.com/5e6856f39a79a12665199a15/5e95106ac42ee761ec1a911d/47e97716398632b02c1493c826cd87f7/object_detection_tutorial.ipynb) 
 
-- 打開Command :
- - cd 到您剛剛git clone 下來的models/research
- - Key入以下指令
- - jupyter notebook object_detection_tutorial.ipynb
+- 打開您的Command OR Terminal並輸入以下指令：
+  - cd 到您剛剛git clone 下來的models/research
+  - Key入以下指令
+  - jupyter notebook object_detection_tutorial.ipynb
+
+**執行此object_detection_tutorial.ipynb如果有出現圖片如下圖就表示您環境配置成功囉**
 
 
 ---
