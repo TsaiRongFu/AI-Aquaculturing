@@ -83,7 +83,7 @@ Thematic works of four students from the Department of Information Management, N
 
 ## 開始配置環境變數
 
-  - 打開Command :
+  - 打開您的Command OR Terminal並輸入以下指令：
   - 要設定的環境變數有 models、research、slim
   - Key入以下指令
   - 每次重開command都要重設一次環境變數
@@ -115,11 +115,11 @@ export PYTHONPATH=/home/itriedgetpunpust/ipynb/TsaiJungFu/cai-train-path/models:
 
   https://github.com/protocolbuffers/protobuf/releases
 
-  接著下載use_protobuf.py檔，以下網址洛失效至專案檔裡Bullding資料夾內找
+  接著下載use_protobuf.py檔，以下網址若失效至專案檔裡Bullding資料夾內找
 
   [use_protobuf.py](https://trello.com/1/cards/5e95106ac42ee761ec1a911d/attachments/5e957d679b6f7a4c7d04c68a/download?backingUrl=https%3A%2F%2Ftrello-attachments.s3.amazonaws.com%2F5e6856f39a79a12665199a15%2F5e95106ac42ee761ec1a911d%2Fa6624a2e61cbf0896f81f551275073fb%2Fuse_protobuf.py)
 
-- 打開Command :
+- 打開您的Command OR Terminal並輸入以下指令
  - cd 至 use_protobuf.py
  - Key入以下指令 **注意空白符號**
 
@@ -134,7 +134,7 @@ export PYTHONPATH=/home/itriedgetpunpust/ipynb/TsaiJungFu/cai-train-path/models:
     <br>
 
     ```
-    python use_protobuf.py models/research/object_detection/protos C:/Users/Eggs Desktop/tensorflow/bin/protoc
+    python use_protobuf.py models/research/object_detection/protos C:/Users/Eggs/Desktop/tensorflow/bin/protoc
     ```
 
 
