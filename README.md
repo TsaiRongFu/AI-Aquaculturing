@@ -28,7 +28,7 @@ Thematic works of four students from the Department of Information Management, N
 
       `conda env list`
 
-      ![conda env list](https://github.com/cairongfu/AI-Aquaculturing/blob/main/ReadmePicture/Anaconda_Create_Env.JPG)
+       ![conda env list](https://github.com/cairongfu/AI-Aquaculturing/blob/main/ReadmePicture/Anaconda_Create_Env.JPG)
 ---
 1. 當您安裝完成Anaconda後，我們開始創建一個新的環境
 
