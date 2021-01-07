@@ -124,14 +124,16 @@ export PYTHONPATH=/home/itriedgetpunpust/ipynb/TsaiJungFu/cai-train-path/models:
   - Key入以下指令 **注意空白符號**
 
     ```
-    python use_protobuf.py 指定到剛剛下載的models下的protos 在指定存放protobuf工具的路徑
+    python use_protobuf.py 指定到剛剛下載的models/research/object_detection底下的protos資料夾內 在指定存放protobuf工具的路徑
     ```
 
     <br>
 
+
     **範例**
 
     <br>
+
 
     ```
     python use_protobuf.py models/research/object_detection/protos C:/Users/Eggs/Desktop/tensorflow/bin/protoc
