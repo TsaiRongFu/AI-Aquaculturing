@@ -23,7 +23,7 @@ Thematic works of four students from the Department of Information Management, N
 
   打開您的Command OR Terminal並輸入以下指令，創建名為train的新環境python版本為3.5
   
-  `conda create -n train pip python=3.5`<br>
+  `conda create -n train pip python=3.5`  
   
   當您創建完成後透過以下指令來確認您是否有成功創建
   `conda env list`
