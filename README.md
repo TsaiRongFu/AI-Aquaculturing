@@ -97,6 +97,7 @@ Thematic works of four students from the Department of Information Management, N
 ```
 set PYTHONPATH=C:\Users\RONGF\Desktop\modle\models;C:\Users\RONGF\Desktop\modle\models\research;C:\Users\RONGF\Desktop\modle\models\research\slim
 ```
+<br>
 
 ### Linux環境
 
