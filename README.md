@@ -63,7 +63,16 @@ https://docs.conda.io/projects/conda/en/latest/user-guide/tasks/manage-environme
       - `pip install pandas`
 <br><br>
 
-5. 首先找一個你喜歡的目錄把tensorflow-models git clone下來  注意(git clone 此專案時就有tensorflow-models)
+5. 接著找一個你喜歡的目錄把tensorflow-models git clone下來
+  
+    https://github.com/tensorflow/models
+
+   注意(git clone 此專案時就有tensorflow-models檔案)
+
+   * 打開您的Command OR Terminal並輸入以下指令
+
+     `git clone https://github.com/tensorflow/models.git`
+    
 
 ---
 
@@ -76,37 +85,6 @@ https://gilberttanner.com/blog/creating-your-own-objectdetector
 https://gilberttanner.com/blog/installing-the-tensorflow-object-detection-api
 
 python train.py --logtostderr --train_dir=training/ --pipeline_config_path=training/ssd_mobilenet_v2_quantized_300x300_coco.config
-
----
-
-在anaconda建置新的環境參照下列網址做
-https://docs.conda.io/projects/conda/en/latest/user-guide/tasks/manage-environments.html
-
-conda create -n train pip python=3.5
-conda activate train
-
----
-
-首先找一個你喜歡的目錄把tensorflow-models git clone下來
- 
-git clone https://github.com/tensorflow/models 
-
-- 打開Command :
- - Key入以下指令
- - python -m pip install --upgrade pip 
- - pip install tensorflow-gpu==1.15
- - conda install -c anaconda protobuf
- - pip install Cython
- - pip install contextlib2 
- - pip install pillow
- - pip install lxml
- - pip install jupyter
- - pip install matplotlib
- - pip install opencv-python
- - pip install pandas
-
-**基本上如果您安裝過  這些元件會都會安裝好一部分元件  但為了確保環境正確請各位在執行一次**
-![Anaconda](https://www.anaconda.com/wp-content/uploads/2018/06/cropped-Anaconda_horizontal_RGB-1-600x102.png)
 
 ---
 
