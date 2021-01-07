@@ -148,7 +148,7 @@ export PYTHONPATH=/home/itriedgetpunpust/ipynb/TsaiJungFu/cai-train-path/models:
     
 <br>
 
-**完成後你會在models\research\object_detection\protos資料夾底下看到相同檔名副檔名為.py之檔案**
+### 完成後你會在models\research\object_detection\protos資料夾底下看到相同檔名副檔名為.py之檔案
 
 
 - 打開您的Command OR Terminal並輸入以下指令：
