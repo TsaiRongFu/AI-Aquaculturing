@@ -214,7 +214,7 @@ export PYTHONPATH=/home/itriedgetpunpust/ipynb/TsaiJungFu/cai-train-path/models:
     ```
 
 ---
-**接著標記所有圖片使用LbelImg**使用方法參照下面這邊就不多贅述了
+**接著標記所有圖片使用LbelImg**
 
 [LabelImg Github](https://github.com/tzutalin/labelImg)
 
