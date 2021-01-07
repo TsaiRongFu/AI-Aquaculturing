@@ -37,7 +37,7 @@ Thematic works of four students from the Department of Information Management, N
 
      `conda activate train`
     
-     ![conda env list](https://github.com/cairongfu/AI-Aquaculturing/blob/main/ReadmePicture/Anaconda_Create_Env.JPG)<br><br>
+     ![conda env list](https://github.com/cairongfu/AI-Aquaculturing/blob/main/ReadmePicture/Anaconda_Change_Env.JPG)<br><br>
   
 **更多關於Anaconda管理環境指令可以參考以下網址**
 
