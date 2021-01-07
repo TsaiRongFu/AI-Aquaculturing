@@ -142,6 +142,8 @@ export PYTHONPATH=/home/itriedgetpunpust/ipynb/TsaiJungFu/cai-train-path/models:
 
 * 當您完成models/research/object_detection/protos資料夾底下的.protobuf檔轉成.py檔後
 
+<br>
+
 - 打開Command :
  - cd models\research
  - Key入以下指令
