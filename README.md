@@ -77,6 +77,7 @@ Thematic works of four students from the Department of Information Management, N
     
 ---
 
+<br>
 
 ## 開始配置環境變數
 
@@ -87,6 +88,7 @@ Thematic works of four students from the Department of Information Management, N
   - 直接寫到環境變數裡面去就不用每次都重設
   - **接下來所有路徑位置都要替換成自己得路徑位置**
 <br>
+
 ### Windows環境 
 
 <br>
