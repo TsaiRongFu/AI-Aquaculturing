@@ -194,7 +194,7 @@ export PYTHONPATH=/home/itriedgetpunpust/ipynb/TsaiJungFu/cai-train-path/models:
 
 接著下載以下py檔，以下網址若失效至專案檔裡Bullding資料夾內找<br>
 [transform_image_resolution.py](https://trello.com/1/cards/5e95106ac42ee761ec1a911d/attachments/5e9511d9d333a51c33985b77/download?backingUrl=https%3A%2F%2Ftrello-attachments.s3.amazonaws.com%2F5e6856f39a79a12665199a15%2F5e95106ac42ee761ec1a911d%2Fb8d987f3d54237772f0829de8ae98a26%2Ftransform_image_resolution.py)
-[transform_image_resolution.py](https://trello.com/1/cards/5e95106ac42ee761ec1a911d/attachments/5e9511d9d333a51c33985b77/download?backingUrl=https%3A%2F%2Ftrello-attachments.s3.amazonaws.com%2F5e6856f39a79a12665199a15%2F5e95106ac42ee761ec1a911d%2Fb8d987f3d54237772f0829de8ae98a26%2Ftransform_image_resolution.py)
+[transform_image_resolution.py](https://github.com/cairongfu/AI-Aquaculturing/blob/main/Bullding/transform_image_resolution.py)
 
 - 打開您的Command OR Terminal並輸入以下指令：
   - cd 到您存放transform_image_resolution.py目錄底下
