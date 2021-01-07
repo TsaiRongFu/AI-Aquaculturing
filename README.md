@@ -39,9 +39,9 @@ Thematic works of four students from the Department of Information Management, N
     
      ![conda env list](https://github.com/cairongfu/AI-Aquaculturing/blob/main/ReadmePicture/Anaconda_Change_Env.JPG)<br><br>
   
-<h4>**更多關於Anaconda管理環境指令可以參考以下網址
+### **更多關於Anaconda管理環境指令可以參考以下網址**
 
-https://docs.conda.io/projects/conda/en/latest/user-guide/tasks/manage-environments.html**</h4><br><br>
+### **https://docs.conda.io/projects/conda/en/latest/user-guide/tasks/manage-environments.html**<br><br>
 
 4. 此步驟是為了配置必要套件，部分套件Anaconda安裝時已自動配置，保險起見還是在全部輸入一次。
 
