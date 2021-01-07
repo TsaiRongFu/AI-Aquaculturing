@@ -26,7 +26,7 @@ Thematic works of four students from the Department of Information Management, N
   
   當您創建完成後透過以下指令來確認您是否有成功創建
   `conda env list`
-  ![conda env list](https://github.com/cairongfu/AI-Aquaculturing/tree/main/ReadmePicture)
+  ![conda env list](https://github.com/cairongfu/AI-Aquaculturing/blob/main/ReadmePicture/Anaconda_Create_Env.JPG)
 
 # 參考這篇教學文件
 
