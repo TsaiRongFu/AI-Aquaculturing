@@ -176,6 +176,7 @@ export PYTHONPATH=/home/itriedgetpunpust/ipynb/TsaiJungFu/cai-train-path/models:
 
 **執行此object_detection_tutorial.ipynb如果有出現圖片如下圖就表示您環境配置成功囉**
 
+![object_detection_tutorial](https://github.com/cairongfu/AI-Aquaculturing/blob/main/Bullding/object_detection_tutorial.png)
 
 ---
 ##**注意接下來這個步驟可以選擇不做**
