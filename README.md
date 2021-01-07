@@ -11,10 +11,22 @@ Thematic works of four students from the Department of Information Management, N
   https://www.anaconda.com/products/individual
   
   配置Anacond主要是為了簡單化安裝必要用到之套件，減少新手配置環境變數遇到之困難，另外Anaconda有著Managing environments，確保當環境配置出錯時不影響主系統
+
+  另外如果您是對環境配置熟練不過的高手，可以跳過安裝Anaconda，照著接下來的教學中出現的套件自行安裝
   
   ![Anaconda](https://www.anaconda.com/wp-content/uploads/2018/06/cropped-Anaconda_horizontal_RGB-1-600x102.png)
+  
 
+---
 
+  當您安裝完成Anacond後，開始創建一個新的環境，參照下列網址做 https://docs.conda.io/projects/conda/en/latest/user-guide/tasks/manage-environments.html
+  
+  打開您的Command OR Terminal並輸入以下指令，創建名為train的新環境python版本為3.5
+  `conda create -n train pip python=3.5`
+  
+  當您創建完成後透過以下指令來確認您是否有成功創建
+  `conda env list`
+  ![conda env list](https://github.com/cairongfu/AI-Aquaculturing/blob/main/ReadmePicture/%E6%93%B7%E5%8F%96.JPG)
 
 # 參考這篇教學文件
 
