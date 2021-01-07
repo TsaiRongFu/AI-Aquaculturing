@@ -41,7 +41,26 @@ Thematic works of four students from the Department of Information Management, N
   
 **更多關於Anaconda管理環境指令可以參考以下網址**
 
-https://docs.conda.io/projects/conda/en/latest/user-guide/tasks/manage-environments.html
+https://docs.conda.io/projects/conda/en/latest/user-guide/tasks/manage-environments.html<br><br>
+
+4. 此步驟是為了配置必要套件，部分套件Anaconda安裝時已自動配置，保險起見還是在全部輸入一次。<font color=red>**未安裝Anaconda的人以下套件必須安裝**</font>
+
+   * 打開您的Command OR Terminal並輸入以下指令
+
+      - `python -m pip install --upgrade pip `
+      - `pip install tensorflow-gpu==1.15`
+      - `conda install -c anaconda protobuf`
+      - `pip install Cython`
+      - `pip install contextlib2`
+      - `pip install pillow`
+      - `pip install lxml`
+      - `pip install jupyter`
+      - `pip install matplotlib`
+      - `pip install opencv-python`
+      - `pip install pandas`
+<br><br>
+
+5. 首先找一個你喜歡的目錄把tensorflow-models git clone下來  注意(git clone 此專案時就有tensorflow-models)
 
 ---
 
