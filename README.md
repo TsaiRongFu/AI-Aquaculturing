@@ -213,7 +213,7 @@ export PYTHONPATH=/home/itriedgetpunpust/ipynb/TsaiJungFu/cai-train-path/models:
         python transform_image_resolution.py -d images/ -s 800 600
     ```
 
-**接著標記所有圖片使用LbelImg**
+## 接著標記所有圖片使用LbelImg
 
 [LabelImg Github](https://github.com/tzutalin/labelImg)
 
