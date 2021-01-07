@@ -106,32 +106,36 @@ set PYTHONPATH=C:\Users\RONGF\Desktop\modle\models;C:\Users\RONGF\Desktop\modle\
 ```
 export PYTHONPATH=/home/itriedgetpunpust/ipynb/TsaiJungFu/cai-train-path/models:/home/itriedgetpunpust/ipynb/TsaiJungFu/cai-train-path/models/research:/home/itriedgetpunpust/ipynb/TsaiJungFu/cai-train-path/models/research/slim
 ```
+
 <br>
 
 * 使用 protoc Bullding 檔案
 
-接著到下列網址下載protobuf工具(依照自身作業系統下載)
+  接著到下列網址下載protobuf工具(依照自身作業系統下載)
 
-https://github.com/protocolbuffers/protobuf/releases
+  https://github.com/protocolbuffers/protobuf/releases
 
-接著下載use_protobuf.py檔，以下網址洛失效至專案檔裡Bullding資料夾內找
+  接著下載use_protobuf.py檔，以下網址洛失效至專案檔裡Bullding資料夾內找
 
-[use_protobuf.py](https://trello.com/1/cards/5e95106ac42ee761ec1a911d/attachments/5e957d679b6f7a4c7d04c68a/download?backingUrl=https%3A%2F%2Ftrello-attachments.s3.amazonaws.com%2F5e6856f39a79a12665199a15%2F5e95106ac42ee761ec1a911d%2Fa6624a2e61cbf0896f81f551275073fb%2Fuse_protobuf.py)
+  [use_protobuf.py](https://trello.com/1/cards/5e95106ac42ee761ec1a911d/attachments/5e957d679b6f7a4c7d04c68a/download?backingUrl=https%3A%2F%2Ftrello-attachments.s3.amazonaws.com%2F5e6856f39a79a12665199a15%2F5e95106ac42ee761ec1a911d%2Fa6624a2e61cbf0896f81f551275073fb%2Fuse_protobuf.py)
 
 - 打開Command :
  - cd 至 use_protobuf.py
  - Key入以下指令 **注意空白符號**
 
-```
-python use_protobuf.py 指定到剛剛下載的models下的protos 在指定存放protobuf工具的路徑
-```
+    ```
+    python use_protobuf.py 指定到剛剛下載的models下的protos 在指定存放protobuf工具的路徑
+    ```
 
- 範例
+    <br>
 
+    **範例**
 
-```
-python use_protobuf.py models/research/object_detection/protos C:/Users/Eggs Desktop/tensorflow/bin/protoc
- ```
+    <br>
+
+    ```
+    python use_protobuf.py models/research/object_detection/protos C:/Users/Eggs Desktop/tensorflow/bin/protoc
+    ```
 
 
 
