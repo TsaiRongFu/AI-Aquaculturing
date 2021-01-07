@@ -67,31 +67,29 @@ Thematic works of four students from the Department of Information Management, N
   
     https://github.com/tensorflow/models
 
-   注意(git clone 此專案時就有tensorflow-models檔案)
+   ```diff
+   - 注意(git clone 此專案時就有tensorflow-models檔案)
+   ```
 
    * 打開您的Command OR Terminal並輸入以下指令
 
      `git clone https://github.com/tensorflow/models.git`
     
-
 ---
 
-# 參考這篇教學文件
+## 開始配置環境變數
 
-https://gilberttanner.com/blog/convert-your-tensorflow-object-detection-model-to-tensorflow-lite
 
-https://gilberttanner.com/blog/creating-your-own-objectdetector
 
-https://gilberttanner.com/blog/installing-the-tensorflow-object-detection-api
-
-python train.py --logtostderr --train_dir=training/ --pipeline_config_path=training/ssd_mobilenet_v2_quantized_300x300_coco.config
 
 ---
 
 - 打開Command :
  - cd models\research
  - Key入以下指令
- - 每次重開command都要重設一次環境變數--**注意路徑位置**
+ - 每次重開command都要重設一次環境變數
+ - 或是直接寫到環境變數裡面去
+ - **接下來所有路徑位置都要替換成自己得路徑位置**
 
 ```
 set PYTHONPATH=C:\Users\RONGF\Desktop\modle\models;C:\Users\RONGF\Desktop\modle\models\research;C:\Users\RONGF\Desktop\modle\models\research\slim
@@ -497,3 +495,13 @@ bazel run --config=opt tensorflow/lite/toco:toco -- --input_file=/tflite_graph.p
    #**恭喜您成功完成了**
    #**有任何文題請參照最上面三個網址**
    #**若還有問題麻煩留言**
+---
+# 參考這篇教學文件
+
+https://gilberttanner.com/blog/convert-your-tensorflow-object-detection-model-to-tensorflow-lite
+
+https://gilberttanner.com/blog/creating-your-own-objectdetector
+
+https://gilberttanner.com/blog/installing-the-tensorflow-object-detection-api
+
+python train.py --logtostderr --train_dir=training/ --pipeline_config_path=training/ssd_mobilenet_v2_quantized_300x300_coco.config
