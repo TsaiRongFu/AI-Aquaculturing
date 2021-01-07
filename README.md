@@ -188,22 +188,30 @@ export PYTHONPATH=/home/itriedgetpunpust/ipynb/TsaiJungFu/cai-train-path/models:
 
 # 圖像標記
 
-**注意接下來這個步驟可以選擇不做**
-
-**此步驟是為了簡化電腦運算的負擔**<br>
+**注意接下來這個步驟可以選擇不做，此步驟是為了簡化電腦運算的負擔(建議是做拉)**<br>
 
 準備好您的圖片放在同一個資料夾
 
-接著下載以下py檔
+接著下載以下py檔，以下網址若失效至專案檔裡Bullding資料夾內找<br>
+[transform_image_resolution.py](https://trello.com/1/cards/5e95106ac42ee761ec1a911d/attachments/5e9511d9d333a51c33985b77/download?backingUrl=https%3A%2F%2Ftrello-attachments.s3.amazonaws.com%2F5e6856f39a79a12665199a15%2F5e95106ac42ee761ec1a911d%2Fb8d987f3d54237772f0829de8ae98a26%2Ftransform_image_resolution.py)
 [transform_image_resolution.py](https://trello.com/1/cards/5e95106ac42ee761ec1a911d/attachments/5e9511d9d333a51c33985b77/download?backingUrl=https%3A%2F%2Ftrello-attachments.s3.amazonaws.com%2F5e6856f39a79a12665199a15%2F5e95106ac42ee761ec1a911d%2Fb8d987f3d54237772f0829de8ae98a26%2Ftransform_image_resolution.py)
 
-- 打開Command :
- - cd 到您存放transform_image_resolution.py目錄底下
- - Key入以下指令
- - python transform_image_resolution.py -d images/ -s 800 600
-```
-    python 檔案名稱 -d 圖片檔案路徑 -s 圖片縮放比例
-```
+- 打開您的Command OR Terminal並輸入以下指令：
+  - cd 到您存放transform_image_resolution.py目錄底下
+  - Key入以下指令
+    ```
+        python transform_image_resolution.py -d 圖片檔案路徑 -s 圖片縮放比例
+    ```
+
+    <br>
+
+    範例
+
+    <br>
+
+    ```
+        python transform_image_resolution.py -d images/ -s 800 600
+    ```
 
 ---
 **接著標記所有圖片使用LbelImg**使用方法參照下面這邊就不多贅述了
