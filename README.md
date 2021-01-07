@@ -120,9 +120,9 @@ export PYTHONPATH=/home/itriedgetpunpust/ipynb/TsaiJungFu/cai-train-path/models:
   - ~~cd 至 use_protobuf.py檔案資料夾底下~~
   - ~~Key入以下指令 **注意空白符號**~~
 
-    ```
+    ~~`
     ~~python use_protobuf.py 指定到剛剛下載的models/research/object_detection底下的protos資料夾內 在指定存放protobuf工具的路徑~~
-    ```
+    `~~
 
     <br>
 
@@ -132,9 +132,9 @@ export PYTHONPATH=/home/itriedgetpunpust/ipynb/TsaiJungFu/cai-train-path/models:
     <br>
 
 
-    ```
-    ~~python use_protobuf.py models/research/object_detection/protos C:/Users/Eggs/Desktop/tensorflow/bin/protoc~~
-    ```
+    ~~`
+    python use_protobuf.py models/research/object_detection/protos C:/Users/Eggs/Desktop/tensorflow/bin/protoc
+    `~~
 <br>
 
 - Windows成功下載protobuf檔案後解壓縮會出現bin資料夾，在環境變數中設定bin路徑
