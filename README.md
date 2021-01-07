@@ -112,29 +112,29 @@ export PYTHONPATH=/home/itriedgetpunpust/ipynb/TsaiJungFu/cai-train-path/models:
 
   https://github.com/protocolbuffers/protobuf/releases
 
-  接著下載use_protobuf.py檔，以下網址若失效至專案檔裡Bullding資料夾內找
+  ~~接著下載use_protobuf.py檔，以下網址若失效至專案檔裡Bullding資料夾內找~~
 
-  [use_protobuf.py](https://trello.com/1/cards/5e95106ac42ee761ec1a911d/attachments/5e957d679b6f7a4c7d04c68a/download?backingUrl=https%3A%2F%2Ftrello-attachments.s3.amazonaws.com%2F5e6856f39a79a12665199a15%2F5e95106ac42ee761ec1a911d%2Fa6624a2e61cbf0896f81f551275073fb%2Fuse_protobuf.py)
+  ~~[use_protobuf.py](https://trello.com/1/cards/5e95106ac42ee761ec1a911d/attachments/5e957d679b6f7a4c7d04c68a/download?backingUrl=https%3A%2F%2Ftrello-attachments.s3.amazonaws.com%2F5e6856f39a79a12665199a15%2F5e95106ac42ee761ec1a911d%2Fa6624a2e61cbf0896f81f551275073fb%2Fuse_protobuf.py)~~
 
-- 打開您的Command OR Terminal並輸入以下指令：
-  - cd 至 use_protobuf.py檔案資料夾底下
-  - Key入以下指令 **注意空白符號**
+~~- 打開您的Command OR Terminal並輸入以下指令：~~
+  ~~- cd 至 use_protobuf.py檔案資料夾底下~~
+  ~~- Key入以下指令 **注意空白符號**~~
 
-    ```
+    ~~```
     python use_protobuf.py 指定到剛剛下載的models/research/object_detection底下的protos資料夾內 在指定存放protobuf工具的路徑
-    ```
+    ```~~
 
     <br>
 
 
-    **範例**
+    ~~**範例**~~
 
     <br>
 
 
-    ```
+    ~~```
     python use_protobuf.py models/research/object_detection/protos C:/Users/Eggs/Desktop/tensorflow/bin/protoc
-    ```
+    ```~~
 <br>
 
 - Windows成功下載protobuf檔案後解壓縮會出現bin資料夾，在環境變數中設定bin路徑
@@ -146,6 +146,8 @@ export PYTHONPATH=/home/itriedgetpunpust/ipynb/TsaiJungFu/cai-train-path/models:
     protoc --python_out=. .\object_detection\protos\anchor_generator.proto .\object_detection\protos\argmax_matcher.proto .\object_detection\protos\bipartite_matcher.proto .\object_detection\protos\box_coder.proto .\object_detection\protos\box_predictor.proto .\object_detection\protos\eval.proto .\object_detection\protos\faster_rcnn.proto .\object_detection\protos\faster_rcnn_box_coder.proto .\object_detection\protos\grid_anchor_generator.proto .\object_detection\protos\hyperparams.proto .\object_detection\protos\image_resizer.proto .\object_detection\protos\input_reader.proto .\object_detection\protos\losses.proto .\object_detection\protos\matcher.proto .\object_detection\protos\mean_stddev_box_coder.proto .\object_detection\protos\model.proto .\object_detection\protos\optimizer.proto .\object_detection\protos\pipeline.proto .\object_detection\protos\post_processing.proto .\object_detection\protos\preprocessor.proto .\object_detection\protos\region_similarity_calculator.proto .\object_detection\protos\square_box_coder.proto .\object_detection\protos\ssd.proto .\object_detection\protos\ssd_anchor_generator.proto .\object_detection\protos\string_int_label_map.proto .\object_detection\protos\train.proto .\object_detection\protos\keypoint_box_coder.proto .\object_detection\protos\multiscale_anchor_generator.proto .\object_detection\protos\graph_rewriter.proto .\object_detection\protos\calibration.proto .\object_detection\protos\flexible_grid_anchor_generator.proto
     ```
     
+<br>
+
 **完成後你會在models\research\object_detection\protos資料夾底下看到相同檔名副檔名為.py之檔案**
 
 
