@@ -21,28 +21,30 @@ Thematic works of four students from the Department of Information Management, N
 
    * 打開您的Command OR Terminal並輸入以下指令，創建名為train的新環境python版本為3.5
    
-     `conda create -n train pip python=3.5`  <br><br>
+     `conda create -n train pip python=3.5`<br><br>
   
 2. 當您創建完成後透過以下指令來確認您是否有成功創建，下圖為成功畫面
-    * 打開您的Command OR Terminal並輸入以下指令
+
+   * 打開您的Command OR Terminal並輸入以下指令
 
       `conda env list`
 
-       ![conda env list](https://github.com/cairongfu/AI-Aquaculturing/blob/main/ReadmePicture/Anaconda_Create_Env.JPG)
----
-1. 當您安裝完成Anaconda後，我們開始創建一個新的環境
+       ![conda env list](https://github.com/cairongfu/AI-Aquaculturing/blob/main/ReadmePicture/Anaconda_Create_Env.JPG)<br><br>
 
-   * 打開您的Command OR Terminal並輸入以下指令，創建名為train的新環境python版本為3.5
-   
-     `conda create -n train pip python=3.5`  <br><br>
+3. 切換到新創的train環境底下
+
+   * 打開您的Command OR Terminal並輸入以下指令，環境就會從原本的base變成train
+
+     `conda activate train`
+    
+     ![conda env list](https://github.com/cairongfu/AI-Aquaculturing/blob/main/ReadmePicture/Anaconda_Create_Env.JPG)<br><br>
   
-*當您創建完成後透過以下指令來確認您是否有成功創建，下圖為成功畫面
-**`conda env list`
-***![conda env list](https://github.com/cairongfu/AI-Aquaculturing/blob/main/ReadmePicture/Anaconda_Create_Env.JPG)
->>>>>>> abf50aeb5581dece006a731177e0e49c1f0584f8
-  
-  更多關於Anaconda管理環境指令可以參考以下網址
-  https://docs.conda.io/projects/conda/en/latest/user-guide/tasks/manage-environments.html
+**更多關於Anaconda管理環境指令可以參考以下網址**
+
+https://docs.conda.io/projects/conda/en/latest/user-guide/tasks/manage-environments.html
+
+---
+
 # 參考這篇教學文件
 
 https://gilberttanner.com/blog/convert-your-tensorflow-object-detection-model-to-tensorflow-lite
