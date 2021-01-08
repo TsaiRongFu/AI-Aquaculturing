@@ -325,6 +325,10 @@ def class_text_to_int(row_label):
 
     ![generate_tfrecord_command_train.py](https://github.com/cairongfu/AI-Aquaculturing/blob/main/ReadmePicture/generate_tfrecord_train.JPG)
 
+  - **會在您下存放generate_tfrecord.py檔路徑底下出現下圖兩隻檔案**
+
+    ![generate_tfrecord_file.py](https://github.com/cairongfu/AI-Aquaculturing/blob/main/ReadmePicture/generate_tfrecord_file.JPG)
+
 ### 特別注意您存放test_labels.csv、train_labels.csv ，--csv_input路徑位置，如不一樣請自行修改
 
 ---
