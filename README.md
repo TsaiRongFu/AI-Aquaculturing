@@ -476,20 +476,19 @@ def class_text_to_int(row_label):
     - cmd key
     - **`pip install "git+https://github.com/philferriere/cocoapi.git#egg=pycocotools&subdirectory=PythonAPI"`**
 
- -  cannot import name 'anchor_generator_pb2' from 'object_detection.protos' (C:\Users\Eggs\anaconda3\lib\site-packages\object_detection-0.1-py3.7.egg\object_detection\protos\__init__.py)
-  - cmd key
-  - cd 
-  - C:/Users/Eggs/Desktop/tensorflow/bin/proto這裡指的是剛剛protoc.exe路徑
-  - --python_out=./ 原地匯出py檔
-  - research\object_detection\protos\*.proto轉換protos資料夾底下所有路徑
-  - 接著進到 models\research\object_detection\protos資料夾內複製所有檔案至anaconda內的protos資料夾裡並取代所有
+-  cannot import name 'anchor_generator_pb2' from 'object_detection.protos' (C:\Users\Eggs\anaconda3\lib\site-packages\object_detection-0.1-py3.7.egg\object_detection\protos\__init__.py)
+    - 打開您的Command OR Terminal並輸入以下指令：
+    - cd C:/Users/Eggs/Desktop/tensorflow/bin/proto (這裡指的是剛剛protoc.exe路徑)
+    - --python_out=./ (原地匯出py檔)
+    - research\object_detection\protos\*.proto轉換protos資料夾底下所有路徑
+    - 接著進到 models\research\object_detection\protos資料夾內複製所有檔案至anaconda內的protos資料夾裡並取代所有
 
 -  No module named 'nets'
- - cmd key 
- - cd models\research\slim 底下輸入
- - python setup.py build
- - python setup.py install
- - 如果build、install失敗請刪除資料夾內的BUILD檔再進行一次上述兩個指令
+    - 打開您的Command OR Terminal並輸入以下指令：
+    - cd models\research\slim 底下輸入
+    - **`python setup.py build`**
+    - **`python setup.py install`**
+    - 如果build、install失敗請刪除資料夾內的BUILD檔再進行一次上述兩個指令
   
 ---
 
