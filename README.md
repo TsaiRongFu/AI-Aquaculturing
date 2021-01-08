@@ -508,9 +508,8 @@ def class_text_to_int(row_label):
       ```
       python export_tflite_ssd_graph.py --input_type image_tensor --pipeline_config_path training/依照自己訓練的config檔名稱.config --trained_checkpoint_prefix training/model.ckpt-XXXX(最大數值) --output_directory ssd_graph(可行命名想要的資料夾名稱)
       ```
----
 
-成功之後會在object_detection 資料夾內出現ssd_graph資料夾裡面會有tflite_graph.pb檔接著開始轉型成tflite檔
+**成功之後會在object_detection 資料夾內出現ssd_graph資料夾裡面會有tflite_graph.pb檔接著開始轉型成tflite檔**
 
 ---
 參照下列網址建置Tensorflow
