@@ -225,24 +225,27 @@ export PYTHONPATH=/home/itriedgetpunpust/ipynb/TsaiJungFu/cai-train-path/models:
 * 如遇到`No module named 'libs.resources'`錯誤輸入下列指令
   * ```pyrcc5 -o ./libs/resources.py resources.qrc```
 
----
+<br>
 
-####接著在images資料夾底下創建兩個新資料夾分別為
+### 接著創建一個名為images的資料夾並在此資料夾並在此資料夾底下創建兩個新資料夾分別為
+
+<br>
 
 **test**     將20％ 的圖片數量放到test資料夾內(包含標記過後對應的XML檔)
+
 **train**    將80％ 的圖片數量放到train資料夾內(包含標記過後對應的XML檔)
 
----
+<br>
 
-接著下載以下兩個py檔
+### 接著下載以下兩個py檔，如字面上意思將您的XML轉成CSV檔
 
-如字面上意思將您的XML轉成CSV檔
+* **注意以下code其中的 image_path路徑、xml_df.to_csv路徑，改為自己XML位置**
+* 以下網址若失效至專案檔裡Bullding資料夾內找
 
-注意以下code其中的 image_path路徑、xml_df.to_csv路徑，改為自己XML位置
 
-下列★部分
+### [xml_to_csv.py](https://trello-attachments.s3.amazonaws.com/5e6856f39a79a12665199a15/5e95106ac42ee761ec1a911d/3f1c24f7a144f306e502a2fb2d01b95f/xml_to_csv.py) 
 
-###**[xml_to_csv.py](https://trello-attachments.s3.amazonaws.com/5e6856f39a79a12665199a15/5e95106ac42ee761ec1a911d/3f1c24f7a144f306e502a2fb2d01b95f/xml_to_csv.py) **
+下列★部分，為要替換成自己路徑代碼
 
 ```
 def main():
@@ -253,17 +256,16 @@ def main():
     print('Successfully converted xml to csv.')
 ```
 
-- 打開Command :
- - cd 到您存放xml_to_csv.py目錄底下
- - Key入以下指令
- - python xml_to_csv.py
+- 打開您的Command OR Terminal並輸入以下指令：
+  - cd 到您存放xml_to_csv.py目錄底下
+  - Key入以下指令
+  - python xml_to_csv.py
 
-**
-Successfully converted xml to csv.後會在您的images資料夾內出現兩個檔
-**
-分別如下：
-'label_test'
-'label_train'
+**Successfully converted xml to csv.後會在您的images資料夾內出現兩個檔分別如下：**
+
+`label_test`
+
+`label_train`
 
 ---
 
