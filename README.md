@@ -685,7 +685,30 @@ If you discover a security vulnerability within Laravel, please send an e-mail t
 The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
 
 ---
+# 物聯網_ESP32
+本專案使用ESP32並與Mysql資料庫聯動
 
+## 環境配置
+在開始前請先安裝妥 CH340G USB to UART 驅動程式
+[CH340G USB to UAR載點]https://sparks.gogo.co.nz/ch340.html)
+
+### STEP.1 
+啟動 Arduino IDE 並點擊下拉功能表「檔案」>「偏好設定」
+在偏好設定頁面找到「額外的開發版管理員網址」。
+輸入
+```
+https://dl.espressif.com/dl/package_esp8266_index.json,https://dl.espressif.com/dl/package_esp32_index.json
+```
+### STEP.2 重新啟動Arduino IDE並點擊「工具」>「開發版」>「開發版管理員」
+輸入 esp32，點擊「安裝」，然後等待幾分鐘下載完畢後點擊右下角落的「關閉」鈕關閉視窗。
+### STEP.3 點擊下拉功能表「工具」>「開發版」，捲動到下方找到適合您的開發板，然後再選擇連接埠。
+依照使用的ESP開發版型號作選擇，本專案使用「DOIT ESP32 DEVKIT V1」。
+## code
+```
+code
+```
+[69]https://sparks.gogo.co.nz/ch340.html)
+---
 # 參考文章
 
 https://gilberttanner.com/blog/convert-your-tensorflow-object-detection-model-to-tensorflow-lite
