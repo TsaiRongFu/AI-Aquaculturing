@@ -376,6 +376,10 @@ item {
 
 ### 請依照手邊系統適配之模型下去訓練
 
+---
+
+<br>
+
 ### 接著到以下找您要訓練的模型預訓練檔並且下載下來放置在你喜愛的路徑下
 
 ### [Tensorflow Zoo](https://github.com/tensorflow/models/blob/master/research/object_detection/g3doc/tf1_detection_zoo.md)
