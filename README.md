@@ -543,18 +543,9 @@ bazel build //tensorflow/tools/pip_package:build_pip_package
 ```
 bazel run --config=opt tensorflow/lite/toco:toco
 ```
-### **這部分會Build成功！！接著把剛剛訓練出來的pd檔放到MSYS2安裝路徑下msys64資料夾底下**
+### **這部分會Build成功！！**
 
-<br>
-
-### 此處重要的點在於您的版本要對應正確！多加留意，很重要所以說三次
-
-### 此處重要的點在於您的版本要對應正確！多加留意，很重要所以說三次
-
-### 此處重要的點在於您的版本要對應正確！多加留意，很重要所以說三次
-
-### **有任何問題請參照Tensorflow官方教學[Tensorflow for Windows](https://www.tensorflow.org/install/source_windows)**
----
+### **接著把剛剛訓練出來的.pd檔放到MSYS2安裝路徑下msys64資料夾底下**
 
 ### **一樣Command OR Terminal執行以下指令**
 
@@ -568,6 +559,13 @@ bazel run --config=opt tensorflow/lite/toco:toco -- --input_file=/tflite_graph.p
 
 ### **成功之後會在MSYS2安裝路徑下msys64資料夾底下出現detect.tflite檔檔案大小會縮小表成功**
 
+### 此處重要的點在於您的版本要對應正確！多加留意，很重要所以說三次
+
+### 此處重要的點在於您的版本要對應正確！多加留意，很重要所以說三次
+
+### 此處重要的點在於您的版本要對應正確！多加留意，很重要所以說三次
+
+### **有任何問題請參照Tensorflow官方教學[Tensorflow for Windows](https://www.tensorflow.org/install/source_windows)**
 ---
 
 為了讓tflite在edage TPU上運行速度正常請參照下列文章在編譯一次模型
