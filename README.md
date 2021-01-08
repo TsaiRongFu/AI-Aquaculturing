@@ -271,14 +271,15 @@ def main():
 
 ![generate_tfrecord.py](https://github.com/cairongfu/AI-Aquaculturing/blob/main/ReadmePicture/xml_to_csv_file.jpg)
 
----
+<br>
 
-###**[generate_tfrecord.py](https://trello-attachments.s3.amazonaws.com/5e6856f39a79a12665199a15/5e95106ac42ee761ec1a911d/268cdee44b44ff9624a0e72db60a72c1/generate_tfrecord.py) **
+### 接著執行這個generate_tfrecord.py檔
 
-接著執行這個generate_tfrecord.py檔
+### [generate_tfrecord.py](https://trello-attachments.s3.amazonaws.com/5e6856f39a79a12665199a15/5e95106ac42ee761ec1a911d/268cdee44b44ff9624a0e72db60a72c1/generate_tfrecord.py) 
 
-**
-注意以下code其中的 def class_text_to_int部分，這部分需要依照您要訓練的label新增，這邊我只訓練一類故此只有 Clownfish如要新增多label就自行增加**
+<br>
+
+**注意以下code其中的 def class_text_to_int部分，這部分需要依照您要訓練的label新增，這邊我只訓練一類故此只有 Clownfish如要新增多label就自行增加**
  
 ```
 if  row_label == 'label name':
@@ -290,8 +291,10 @@ if  row_label == 'label name':
 ```
 
 下列★部分要特別注意填寫的內容
-**‘label name'  **
-**'return number'**
+
+**label name**
+
+**return number**
 
 ```
 def class_text_to_int(row_label):
@@ -300,11 +303,11 @@ def class_text_to_int(row_label):
       else:
          None
 ```
-- 打開Command :
- - cd 到您存放generate_tfrecord.py目錄底下
- - Key入以下指令
- - python generate_tfrecord.py --csv_input=images/train_labels.csv --image_dir=images/train --output_path=train.record
- - python generate_tfrecord.py --csv_input=images/test_labels.csv --image_dir=images/test --output_path=test.record
+- 打開您的Command OR Terminal並輸入以下指令：
+  - cd 到您存放generate_tfrecord.py目錄底下
+  - Key入以下指令
+  - ```python generate_tfrecord.py --csv_input=images/train_labels.csv --image_dir=images/train --output_path=train.record```
+  - ```python generate_tfrecord.py --csv_input=images/test_labels.csv --image_dir=images/test --output_path=test.record```
 
 ###**邊特別注意您存放test_labels.csv、train_labels.csv ，--csv_input路徑位置，如不一樣請自行修改**
 ---
