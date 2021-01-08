@@ -543,11 +543,7 @@ bazel build //tensorflow/tools/pip_package:build_pip_package
 ```
 bazel run --config=opt tensorflow/lite/toco:toco
 ```
-### **這部分會Build成功！！有任何問題請參照Tensorflow官方教學[Tensorflow for Windows](https://www.tensorflow.org/install/source_windows)**
-
-<br>
-
-### **接著把剛剛訓練出來的pd檔放到MSYS2安裝路徑下msys64資料夾底下**
+### **這部分會Build成功！！接著把剛剛訓練出來的pd檔放到MSYS2安裝路徑下msys64資料夾底下**
 
 <br>
 
@@ -557,6 +553,7 @@ bazel run --config=opt tensorflow/lite/toco:toco
 
 ### 此處重要的點在於您的版本要對應正確！多加留意，很重要所以說三次
 
+### **有任何問題請參照Tensorflow官方教學[Tensorflow for Windows](https://www.tensorflow.org/install/source_windows)**
 ---
 
 ### **一樣Command OR Terminal執行以下指令**
