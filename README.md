@@ -76,8 +76,6 @@ Thematic works of four students from the Department of Information Management, N
      `git clone https://github.com/tensorflow/models.git`
 ---
 
-<br>
-
 ## 開始配置環境變數
 
   - 打開您的Command OR Terminal並輸入以下指令：
@@ -161,8 +159,6 @@ export PYTHONPATH=/home/itriedgetpunpust/ipynb/TsaiJungFu/cai-train-path/models:
 **Windows、Linux在install時錯誤把請用python3.6環境進行build、install、install**
 
 ---
-
-<br>
 
 ## 測試
 
