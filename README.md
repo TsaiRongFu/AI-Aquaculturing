@@ -536,8 +536,6 @@ bazel build //tensorflow/tools/pip_package:build_pip_package
 ```
 ### **最後報錯這是沒有關西的**
 
-<br>
-
 ### **接著不要關掉Command OR Terminal 繼續執行**
 
 ```
@@ -558,6 +556,8 @@ bazel run --config=opt tensorflow/lite/toco:toco -- --input_file=/tflite_graph.p
 ```
 
 ### **成功之後會在MSYS2安裝路徑下msys64資料夾底下出現detect.tflite檔檔案大小會縮小表成功**
+
+<br>
 
 ### 此處重要的點在於您的版本要對應正確！多加留意，很重要所以說三次
 
