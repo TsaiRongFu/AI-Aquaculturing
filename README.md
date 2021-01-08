@@ -311,6 +311,7 @@ def class_text_to_int(row_label):
 - 打開您的Command OR Terminal並輸入以下指令：
   - cd 到您存放generate_tfrecord.py目錄底下
   - Key入以下指令
+  - **特別注意您存放test_labels.csv、train_labels.csv ，--csv_input路徑位置，如不一樣請自行修改**
 
     ```
     python generate_tfrecord.py --csv_input=images/train_labels.csv --image_dir=images/train --output_path=train.record
@@ -329,7 +330,7 @@ def class_text_to_int(row_label):
 
     ![generate_tfrecord_file.py](https://github.com/cairongfu/AI-Aquaculturing/blob/main/ReadmePicture/generate_tfrecord_file.JPG)
 
-### 特別注意您存放test_labels.csv、train_labels.csv ，--csv_input路徑位置，如不一樣請自行修改
+
 
 ---
 ##**接著創建一個labelmap.pdtxt檔案如下範例(可拿下面labelmap.pbtxt改)**
