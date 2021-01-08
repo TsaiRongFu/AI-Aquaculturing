@@ -596,4 +596,4 @@ https://gilberttanner.com/blog/creating-your-own-objectdetector
 
 https://gilberttanner.com/blog/installing-the-tensorflow-object-detection-api
 
-##　*最後感謝在這專案所有貢獻者*
+## *最後感謝在這專案所有貢獻者*
