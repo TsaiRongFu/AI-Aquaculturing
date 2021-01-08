@@ -261,11 +261,15 @@ def main():
   - Key入以下指令
   - python xml_to_csv.py
 
+    ![generate_tfrecord.py](https://github.com/cairongfu/AI-Aquaculturing/blob/main/ReadmePicture/xml_to%20_csv_command.JPG)
+
 **Successfully converted xml to csv後會在您的images資料夾內出現兩個檔分別如下：**
 
 `label_test.csv`
 
 `label_train.csv`
+
+![generate_tfrecord.py](https://github.com/cairongfu/AI-Aquaculturing/blob/main/ReadmePicture/xml_to_csv_file.jpg)
 
 ---
 
