@@ -315,7 +315,9 @@ def class_text_to_int(row_label):
     python generate_tfrecord.py --csv_input=images/test_labels.csv --image_dir=images/test --output_path=test.record
     ```
 
-###**邊特別注意您存放test_labels.csv、train_labels.csv ，--csv_input路徑位置，如不一樣請自行修改**
+
+### 特別注意您存放test_labels.csv、train_labels.csv ，--csv_input路徑位置，如不一樣請自行修改
+
 ---
 ##**接著創建一個labelmap.pdtxt檔案如下範例(可拿下面labelmap.pbtxt改)**
 
