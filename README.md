@@ -173,7 +173,7 @@ export PYTHONPATH=/home/itriedgetpunpust/ipynb/TsaiJungFu/cai-train-path/models:
 [object_detection_tutorial.ipynb](https://trello-attachments.s3.amazonaws.com/5e6856f39a79a12665199a15/5e95106ac42ee761ec1a911d/47e97716398632b02c1493c826cd87f7/object_detection_tutorial.ipynb) 
 
 - 打開您的Command OR Terminal並輸入以下指令：
-  - cd 到您剛剛git clone 下來的models/research
+  - cd 到您剛剛git clone 下來的models\research\object_detection資料夾內
   - Key入以下指令
   - jupyter notebook object_detection_tutorial.ipynb
 
@@ -280,7 +280,7 @@ def main():
 
 ### 接著執行這個generate_tfrecord.py檔
 
-### [generate_tfrecord.py](https://trello-attachments.s3.amazonaws.com/5e6856f39a79a12665199a15/5e95106ac42ee761ec1a911d/268cdee44b44ff9624a0e72db60a72c1/generate_tfrecord.py) 
+### [generate_tfrecord.py](https://trello-attachments.s3.amazonaws.com/5e6856f39a79a12665199a15/5e95106ac42ee761ec1a911d/268cdee44b44ff9624a0e72db60a72c1/generate_tfrecord.py)
 
 <br>
 
@@ -319,7 +319,11 @@ def class_text_to_int(row_label):
     ```
     python generate_tfrecord.py --csv_input=images/test_labels.csv --image_dir=images/test --output_path=test.record
     ```
+  - **成功Bullding tfrecode檔案如下圖**
 
+    ![generate_tfrecord_command_test.py](https://github.com/cairongfu/AI-Aquaculturing/blob/main/ReadmePicture/generate_tfrecord_test.JPG.py)
+
+    ![generate_tfrecord_command_train.py](https://github.com/cairongfu/AI-Aquaculturing/blob/main/ReadmePicture/generate_tfrecord_train.JPG)
 
 ### 特別注意您存放test_labels.csv、train_labels.csv ，--csv_input路徑位置，如不一樣請自行修改
 
