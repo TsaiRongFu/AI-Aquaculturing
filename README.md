@@ -307,12 +307,13 @@ def class_text_to_int(row_label):
   - cd 到您存放generate_tfrecord.py目錄底下
   - Key入以下指令
 
-```
-  python generate_tfrecord.py --csv_input=images/train_labels.csv --image_dir=images/train --output_path=train.record
-```
+    ```
+    python generate_tfrecord.py --csv_input=images/train_labels.csv --image_dir=images/train --output_path=train.record
+    ```
 
-
-    ```python generate_tfrecord.py --csv_input=images/test_labels.csv --image_dir=images/test --output_path=test.record```
+    ```
+    python generate_tfrecord.py --csv_input=images/test_labels.csv --image_dir=images/test --output_path=test.record
+    ```
 
 ###**邊特別注意您存放test_labels.csv、train_labels.csv ，--csv_input路徑位置，如不一樣請自行修改**
 ---
