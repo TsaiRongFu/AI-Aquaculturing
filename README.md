@@ -270,9 +270,9 @@ def main():
 
 **Successfully converted xml to csv後會在您的images資料夾內出現兩個檔分別如下：**
 
-`label_test.csv`
+`test_labels.csv`
 
-`label_train.csv`
+`train_labels.csv`
 
 ![generate_tfrecord.py](https://github.com/cairongfu/AI-Aquaculturing/blob/main/ReadmePicture/xml_to_csv_file.jpg)
 
