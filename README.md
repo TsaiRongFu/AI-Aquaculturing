@@ -180,7 +180,7 @@ export PYTHONPATH=/home/itriedgetpunpust/ipynb/TsaiJungFu/cai-train-path/models:
 
 ### 執行此object_detection_tutorial.ipynb如果有出現圖片如下圖就表示您環境配置成功囉！！
 
-![object_detection_tutorial](https://github.com/cairongfu/AI-Aquaculturing/blob/main/Bullding/object_detection_tutorial.png)
+![object_detection_tutorial](https://github.com/cairongfu/AI-Aquaculturing/blob/main/ReadmePicture/object_detection_tutorial.png)
 
 ---
 
@@ -361,6 +361,7 @@ item {
 * 以下網址若失效至專案檔裡Bullding資料夾內找
 
   ### [labelmap.pbtxt](https://trello.com/1/cards/5e95106ac42ee761ec1a911d/attachments/5e95630c6c00820229eb32e8/download?backingUrl=https%3A%2F%2Ftrello-attachments.s3.amazonaws.com%2F5e6856f39a79a12665199a15%2F5e95106ac42ee761ec1a911d%2F8c1f4d05173cd40e69ec33941f98da12%2Flabelmap.pbtxt)
+
 ---
 
 接著到models\research\object_detection底下
