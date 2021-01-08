@@ -33,7 +33,7 @@ float voltage, phValue, temperature;
 #define waterSensor 13
 int waterVal;
 
-IPAddress server_addr(140,127,32,14);   // 安裝Mysql的電腦的IP地址
+IPAddress server_addr(140,xxx,xxx,14);   // 安裝Mysql的電腦的IP地址
 char user[] = "yourmysql account";              // Mysql的用戶名
 char password[] = "yourpassword";        // 登陸Mysql的密碼
 
