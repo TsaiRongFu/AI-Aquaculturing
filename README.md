@@ -449,9 +449,7 @@ def class_text_to_int(row_label):
 
 ---
 
- <br>
- 
- ### 以下是訓練時發生時的幾種樣態及Debug方法
+ ## 以下是訓練時發生時的幾種樣態及Debug方法
 (目前本人我遇到的情況，每個人環境都可能不一樣所以並非全部錯誤都會在下面)
 
 -  No module named 'absl'
@@ -522,21 +520,21 @@ https://www.tensorflow.org/install/source_windows
 首先配置環境安裝以下檔案
 * 以下網址若失效至專案檔裡Bullding資料夾內找
 
-[vs_buildtools.exe](https://trello-attachments.s3.amazonaws.com/5e6856f39a79a12665199a15/5e95106ac42ee761ec1a911d/51081d5a8b8ec951efe2f2afadf8aa7c/vs_buildtools.exe) 
+  [vs_buildtools.exe](https://trello-attachments.s3.amazonaws.com/5e6856f39a79a12665199a15/5e95106ac42ee761ec1a911d/51081d5a8b8ec951efe2f2afadf8aa7c/vs_buildtools.exe) 
 
-[vc_redist.x86](https://drive.google.com/file/d/1ZC-5g6hPiw4h0-MkJln75iNZbk03Dy0m/view?usp=sharing)
+  [vc_redist.x86](https://drive.google.com/file/d/1ZC-5g6hPiw4h0-MkJln75iNZbk03Dy0m/view?usp=sharing)
 
-[MSYS2](http://repo.msys2.org/distrib/x86_64/msys2-x86_64-20190524.exe)
+  [MSYS2](http://repo.msys2.org/distrib/x86_64/msys2-x86_64-20190524.exe)
 
-[bazel](https://github.com/bazelbuild/bazel/releases/download/0.26.1/bazel-0.26.1-windows-x86_64.zip)
+  [bazel](https://github.com/bazelbuild/bazel/releases/download/0.26.1/bazel-0.26.1-windows-x86_64.zip)
 
-[Tensorflow](https://github.com/tensorflow/tensorflow/archive/v1.15.0.zip)
+  [Tensorflow](https://github.com/tensorflow/tensorflow/archive/v1.15.0.zip)
 
-## 此處重要的點在於您的版本要對應正確！多加留意，很重要所以說三次
+### 此處重要的點在於您的版本要對應正確！多加留意，很重要所以說三次
 
-## 此處重要的點在於您的版本要對應正確！多加留意，很重要所以說三次
+### 此處重要的點在於您的版本要對應正確！多加留意，很重要所以說三次
 
-## 此處重要的點在於您的版本要對應正確！多加留意，很重要所以說三次
+### 此處重要的點在於您的版本要對應正確！多加留意，很重要所以說三次
 
 <br>
 
