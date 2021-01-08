@@ -1,0 +1,77 @@
+
+@media (min-width: 992px) and (max-width: 1199px) {
+	
+	.more-features-box-text { margin-top: 30px; padding-left: 0; }
+	.more-features-box-text:first-child { margin-top: 0; }
+	
+	.great-support-box-text-left { padding-right: 0; }
+	.great-support-box-text-left:first-child { margin-top: 0; }
+	
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+
+	.section-description p { padding: 0; }
+	
+	.more-features-box { float: none; width: auto; }
+	.more-features-box-text { margin-top: 30px; padding-left: 0; text-align: center; }
+	.more-features-box-text:first-child { margin-top: 50px; }
+	.more-features-box-text-icon { float: none; display: inline-block; }
+	.more-features-box-text h3 { float: none; width: auto; margin-top: 20px; }
+	.more-features-box-text-description { float: none; width: auto; }
+	
+	.great-support-box { float: none; width: auto; }
+	.great-support-box-text { margin-top: 30px; padding-left: 0; text-align: center; }
+	.great-support-box-text-left { padding-right: 0; }
+
+}
+
+@media (max-width: 767px) {
+	
+	.navbar.navbar-no-bg { background: #444; }
+	.navbar-brand { margin-left: 15px; }
+	.navbar-collapse { border: 0; }
+	.navbar-inverse ul.navbar-nav li a { padding-top: 10px; padding-bottom: 10px; }
+	
+	.inner-bg { padding: 140px 0; }
+	.top-content .top-big-link { margin-top: 25px; }
+	.top-content .top-big-link a.btn { margin-top: 10px; }
+	
+	.section-description p { padding: 0; }
+    
+    .more-features-box-text { margin-top: 30px; padding-left: 0; text-align: center; }
+	.more-features-box-text:first-child { margin-top: 50px; }	
+	.more-features-box-text-icon { float: none; display: inline-block; }
+	.more-features-box-text h3 { float: none; width: auto; margin-top: 20px; }
+	.more-features-box-text-description { float: none; width: auto; }
+	
+	.great-support-box-text { margin-top: 30px; padding-left: 0; text-align: center; }
+	.great-support-box-text-left { padding-right: 0; }
+	
+	.footer-social a { margin: 5px; }
+
+}
+
+@media (max-width: 415px) {
+	
+	h1, h2 { font-size: 32px; }
+
+}
+
+
+/* Retina-ize images/icons */
+
+@media
+only screen and (-webkit-min-device-pixel-ratio: 2),
+only screen and (   min--moz-device-pixel-ratio: 2),
+only screen and (     -o-min-device-pixel-ratio: 2/1),
+only screen and (        min-device-pixel-ratio: 2),
+only screen and (                min-resolution: 192dpi),
+only screen and (                min-resolution: 2dppx) {
+	
+	/* logo */
+    .navbar-brand {
+    	background-image: url(../img/logo@2x.png) !important; background-repeat: no-repeat !important; background-size: 72px 43px !important;
+    }
+	
+}
