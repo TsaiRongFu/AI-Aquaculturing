@@ -466,15 +466,15 @@ def class_text_to_int(row_label):
 
 -  No module named 'absl'
     - 打開您的Command OR Terminal並輸入以下指令：
-    - `pip install absl-py `
+    - **`pip install absl-py`**
 
 - No module named 'tensorflow'
     - 打開您的Command OR Terminal並輸入以下指令：
-    - `pip install tensorflow==1.15  `
+    - **`pip install tensorflow==1.15`**
  
 -  No module named 'pycocotools'
     - cmd key
-    - `pip install "git+https://github.com/philferriere/cocoapi.git#egg=pycocotools&subdirectory=PythonAPI"`
+    - **`pip install "git+https://github.com/philferriere/cocoapi.git#egg=pycocotools&subdirectory=PythonAPI"`**
 
  -  cannot import name 'anchor_generator_pb2' from 'object_detection.protos' (C:\Users\Eggs\anaconda3\lib\site-packages\object_detection-0.1-py3.7.egg\object_detection\protos\__init__.py)
   - cmd key
