@@ -492,19 +492,22 @@ def class_text_to_int(row_label):
   
 ---
 
-當模型訓練到您要的loss值之後Ctrl+c關閉後在training資料夾內會出現
-接著開始凍結出模型
+<br>
+
+## 凍結出模型
+
+當模型訓練到您要的loss值之後Ctrl+c關閉後在training資料夾內會出現model.ckpt-xxxxx檔
 
 打開training資料夾找到model.ckpt-xxxxx檔案，選擇數字最高的檔案
 
-- 打開Command :
- - cd C:\Users\RONGF\Desktop\modle\models\research\object_detection
- - Key入以下指令
- - python export_tflite_ssd_graph.py --input_type image_tensor --pipeline_config_path training/ssdlite_mobilenet_v2_coco.config --trained_checkpoint_prefix training/model.ckpt-XXXX --output_directory ssd_graph
+- 打開您的Command OR Terminal並輸入以下指令：
+    - cd models\research\object_detection
+    - Key入以下指令
+    - `python export_tflite_ssd_graph.py --input_type image_tensor --pipeline_config_path training/ssdlite_mobilenet_v2_coco.config --trained_checkpoint_prefix training/model.ckpt-XXXX --output_directory ssd_graph`
 
-```
-python export_tflite_ssd_graph.py --input_type image_tensor --pipeline_config_path training/依照自己訓練的config檔名稱.config --trained_checkpoint_prefix training/model.ckpt-XXXX(最大數值) --output_directory ssd_graph(可行命名想要的資料夾名稱)
-```
+      ```
+      python export_tflite_ssd_graph.py --input_type image_tensor --pipeline_config_path training/依照自己訓練的config檔名稱.config --trained_checkpoint_prefix training/model.ckpt-XXXX(最大數值) --output_directory ssd_graph(可行命名想要的資料夾名稱)
+      ```
 ---
 
 成功之後會在object_detection 資料夾內出現ssd_graph資料夾裡面會有tflite_graph.pb檔接著開始轉型成tflite檔
