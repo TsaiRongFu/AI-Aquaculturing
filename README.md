@@ -321,7 +321,7 @@ def class_text_to_int(row_label):
     ```
   - **成功Bullding tfrecode檔案如下圖**
 
-    ![generate_tfrecord_command_test.py](https://github.com/cairongfu/AI-Aquaculturing/blob/main/ReadmePicture/generate_tfrecord_test.JPG.py)
+    ![generate_tfrecord_command_test.py](https://github.com/cairongfu/AI-Aquaculturing/blob/main/ReadmePicture/generate_tfrecord_test.JPG)
 
     ![generate_tfrecord_command_train.py](https://github.com/cairongfu/AI-Aquaculturing/blob/main/ReadmePicture/generate_tfrecord_train.JPG)
 
