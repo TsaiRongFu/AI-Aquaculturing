@@ -707,10 +707,36 @@ https://dl.espressif.com/dl/package_esp8266_index.json,https://dl.espressif.com/
 
 ### STEP.4 本專案以Windows 10為範例，在本機電腦[文件]找到Arduino\libraries資料夾
 將本專案使用到之程式庫解壓丟入 
-```
+
 [Arduino\libraries載點](https://drive.google.com/file/d/19YQ9WdW99EQ9eSvvlOBOF20QolmNIzzK/view?usp=sharing)
+---
+## ino檔編輯並燒入
+
+### STEP.1 在WIFI以及MYSQL程式碼部分輸入自己的帳號密碼
 ```
-[69]https://sparks.gogo.co.nz/ch340.html)
+IPAddress server_addr(140,xxx,xxx,xxx);   // 安裝Mysql的電腦的IP地址
+char user[] = "xxx";              // Mysql的用戶名
+char password[] = "xxxx";        // 登陸Mysql的密碼
+```
+```
+char ssid[] = "TP-LINK_07B4";     // your network SSID (name)
+char pass[] = "12345678910";  // your network password
+```
+### STEP.2 在程式各功能部分 定義Sensor的信號腳位
+```
+#define PH_PIN 35
+#define oneWireBus 12  //溫度gpio_pin
+#define waterSensor 13
+```
+### STEP.3 確認輸入正確，並且在ESP32插入好感測器腳位後，即可燒錄上傳
+```
+注意! ESP32的12腳位燒入時不能插上，否則會導致燒錄失
+```
+---
+---
+#LINE BOT使用
+本程式只需在config檔案輸入LINEBOT上取得的金鑰權杖，以及輸入MYSQL網址、帳號密碼、資料庫即可上傳至HEROKU使用
+不多贅述
 ---
 # 參考文章
 
