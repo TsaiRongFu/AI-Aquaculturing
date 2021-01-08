@@ -330,7 +330,7 @@ def class_text_to_int(row_label):
 
     ![generate_tfrecord_file.py](https://github.com/cairongfu/AI-Aquaculturing/blob/main/ReadmePicture/generate_tfrecord_file.JPG)
 
-### **把剛剛轉出來的test.record train.record檔移至models\research\object_detection底下**
+### **把剛剛轉出來的test.record、train.record檔移至models\research\object_detection底下**
 
 ---
 
@@ -338,7 +338,7 @@ def class_text_to_int(row_label):
 
 ## 接著配置訓練檔案
 
-* 首先到以下找您要訓練的模型預訓練檔並且下載下來放置在你喜愛的路徑下
+* 首先到以下找您要訓練的模型預訓練檔並且下載下來解壓縮後放置在你喜愛的路徑下
 
   ### [Tensorflow Zoo](https://github.com/tensorflow/models/blob/master/research/object_detection/g3doc/tf1_detection_zoo.md)
 
@@ -370,8 +370,7 @@ item {
 
   ### [labelmap.pbtxt](https://trello.com/1/cards/5e95106ac42ee761ec1a911d/attachments/5e95630c6c00820229eb32e8/download?backingUrl=https%3A%2F%2Ftrello-attachments.s3.amazonaws.com%2F5e6856f39a79a12665199a15%2F5e95106ac42ee761ec1a911d%2F8c1f4d05173cd40e69ec33941f98da12%2Flabelmap.pbtxt)
 
-
-接著到models\research\object_detection底下
+- 接著到models\research\object_detection底下
 
 - 打開您的Command OR Terminal並輸入以下指令：
   - cd models\research\object_detection
@@ -418,37 +417,34 @@ item {
       label_map_path: "C:/Users/RONGF/Desktop/modle/models/research/object_detection/training/labelmap.pbtxt"
     }
     ```
+  - 此處的input_path放入test.record路徑
+
+  - label_map_path:放入您的labelmap.pbtxt路徑
+
+    ```
+    eval_input_reader: {
+      tf_record_input_reader {
+        input_path: "C:/Users/RONGF/Desktop/modle/test.record"
+      }
+      label_map_path: "C:/Users/RONGF/Desktop/modle/models/research/object_detection/training/labelmap.pbtxt"
+      shuffle: false
+      num_readers: 1
+    }
+    ```
 
 ### 目前EdgeTpu僅接受sd_mobilenet_v2_quantized_300x300_coco否則訓練出來模型會有問題
 
-### 請依照手邊系統適配之模型下去訓練
+### 請依照手邊系統適配之模型下去訓練，此處設定檔要配置正確請詳細檢查是否有打錯
+
+### 更多Config配置參數細節可自行Google查詢
 
 ---
 
+<br>
 
+## 開始進行模型訓練
 
-
-
----
-
-此處的input_path放入test.record路徑
-
- label_map_path:放入您的labelmap.pbtxt路徑
-
-```
-eval_input_reader: {
-  tf_record_input_reader {
-    input_path: "C:/Users/RONGF/Desktop/modle/test.record"
-  }
-  label_map_path: "C:/Users/RONGF/Desktop/modle/models/research/object_detection/training/labelmap.pbtxt"
-  shuffle: false
-  num_readers: 1
-}
-```
-
----
-最後進行模型訓練
-到models\research\object_detection\legacy\train複製這支py檔到models\research\object_detection目錄下
+到models\research\object_detection\legacy\train複製train.py檔到models\research\object_detection目錄下
 
 - 打開Command :
  - cd models\research\object_detection
