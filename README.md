@@ -432,9 +432,9 @@ def class_text_to_int(row_label):
     }
     ```
 
-### 目前EdgeTpu僅接受sd_mobilenet_v2_quantized_300x300_coco否則訓練出來模型會有問題
+### 目前EdgeTpu僅接受sd_mobilenet_v2_quantized_300x300_coco否則訓練出來模型會有問題！
 
-### 請依照手邊系統適配之模型下去訓練，此處設定檔要配置正確請詳細檢查是否有打錯
+### 請依照手邊系統適配之模型下去訓練，此處設定檔很重要要配置正確，請詳細檢查是否有打錯
 
 ### 更多Config配置參數細節可自行Google查詢
 
