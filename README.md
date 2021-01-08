@@ -223,7 +223,10 @@ export PYTHONPATH=/home/itriedgetpunpust/ipynb/TsaiJungFu/cai-train-path/models:
 * pip install lxml
 * pip install pyqt5
 * 如遇到`No module named 'libs.resources'`錯誤輸入下列指令
-  * ```pyrcc5 -o ./libs/resources.py resources.qrc```
+
+  ```
+  pyrcc5 -o ./libs/resources.py resources.qrc
+  ```
 
 <br>
 
@@ -259,7 +262,9 @@ def main():
 - 打開您的Command OR Terminal並輸入以下指令：
   - cd 到您存放xml_to_csv.py目錄底下
   - Key入以下指令
-  - python xml_to_csv.py
+    ```
+    python xml_to_csv.py
+    ```
 
     ![generate_tfrecord.py](https://github.com/cairongfu/AI-Aquaculturing/blob/main/ReadmePicture/xml_to%20_csv_command.JPG)
 
