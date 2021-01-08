@@ -346,25 +346,25 @@ def class_text_to_int(row_label):
 
 * 接著創建一個labelmap.pdtxt檔案如下範例(可拿下面labelmap.pbtxt改)
 
-```
-此處id數量和ID請與generate_tfrecord.py一致
-item {
-    id: 1
-    name: 'ID'
-}
-item {
-    id: 2
-    name: 'ID'
-}
-item {
-    id: 3
-    name: 'ID'
-}
-item {
-    id: 4
-    name: 'ID'
-}
-```
+  ```
+  此處id數量和ID請與generate_tfrecord.py一致
+  item {
+      id: 1
+      name: 'ID'
+  }
+  item {
+      id: 2
+      name: 'ID'
+  }
+  item {
+      id: 3
+      name: 'ID'
+  }
+  item {
+      id: 4
+      name: 'ID'
+  }
+  ```
 
 * 以下網址若失效至專案檔裡Bullding資料夾內找
 
