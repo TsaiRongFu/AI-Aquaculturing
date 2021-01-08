@@ -41,7 +41,7 @@ Thematic works of four students from the Department of Information Management, N
   
 ### **更多關於Anaconda管理環境指令可以參考以下網址**
 
-#### **https://docs.conda.io/projects/conda/en/latest/user-guide/tasks/manage-environments.html**<br><br>
+### [Anaconda Managing Environments](https://docs.conda.io/projects/conda/en/latest/user-guide/tasks/manage-environments.html)<br><br>
 
 4. 此步驟是為了配置必要套件，部分套件Anaconda安裝時已自動配置，保險起見還是在全部輸入一次。
 
@@ -65,7 +65,7 @@ Thematic works of four students from the Department of Information Management, N
 
 5. 接著找一個你喜歡的目錄把tensorflow-models git clone下來
   
-    https://github.com/tensorflow/models
+   ### [Tensorflow Models](https://github.com/tensorflow/models)
 
    ```diff
    - 注意(git clone 此專案時就有tensorflow-models檔案)
@@ -110,7 +110,7 @@ export PYTHONPATH=/home/itriedgetpunpust/ipynb/TsaiJungFu/cai-train-path/models:
 
   接著到下列網址下載protobuf工具(依照自身作業系統下載)
 
-  https://github.com/protocolbuffers/protobuf/releases
+  ### [Protobuf Tool](https://github.com/protocolbuffers/protobuf/releases)
 
   ~~接著下載use_protobuf.py檔，以下網址若失效至專案檔裡Bullding資料夾內找~~
 
@@ -362,31 +362,23 @@ item {
 
   ### [labelmap.pbtxt](https://trello.com/1/cards/5e95106ac42ee761ec1a911d/attachments/5e95630c6c00820229eb32e8/download?backingUrl=https%3A%2F%2Ftrello-attachments.s3.amazonaws.com%2F5e6856f39a79a12665199a15%2F5e95106ac42ee761ec1a911d%2F8c1f4d05173cd40e69ec33941f98da12%2Flabelmap.pbtxt)
 
----
 
 接著到models\research\object_detection底下
 
-- 打開Command :
- - cd models\research\object_detection
- - Key入以下指令
- - ` mkdir training`
+- 打開您的Command OR Terminal並輸入以下指令：
+  - cd models\research\object_detection
+  - Key入以下指令
+  - `mkdir training`
+- **接著到models\research\object_detection\samples\configs底下找到您要的訓練模型config複製到剛剛新增的training資料夾內**
+- **剛剛上一步驟中的labelmap.pdtxt也放入新增的training資料夾內**
 
-接著到models\research\object_detection\samples\configs底下找到您要的訓練模型config複製到剛剛新增的training資料夾內
+### 目前EdgeTpu僅接受sd_mobilenet_v2_quantized_300x300_coco否則訓練出來模型會有問題
 
-#**注意目前僅接受**
-#**ssd_mobilenet_v2_quantized_300x300_coco.config**
-#**否則訓練出來模型會有問題**
+### 請依照手邊系統適配之模型下去訓練
 
-**在將labelmap.pbtxt也複製到training資料夾內**
----
-到以下找您要訓練的模型並且下載下來放置在你喜愛的路徑下
+### 接著到以下找您要訓練的模型預訓練檔並且下載下來放置在你喜愛的路徑下
 
-#**注意目前僅接受**
-#**ssd_mobilenet_v2_quantized_coco 這個模型**
-#**否則訓練出來模型會有問題**
-
-https://github.com/tensorflow/models/blob/master/research/object_detection/g3doc/detection_model_zoo.md
----
+### [Tensorflow Zoo](https://github.com/tensorflow/models/blob/master/research/object_detection/g3doc/tf1_detection_zoo.md)
 
 修改config檔設定
 
