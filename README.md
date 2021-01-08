@@ -582,12 +582,8 @@ bazel run --config=opt tensorflow/lite/toco:toco -- --input_file=/tflite_graph.p
 
 ---
 
-   # **恭喜您成功完成了**
+   # **恭喜您成功完成了若還有問題麻煩開啟Issues我們盡可能的幫助您**
 
-   # **有任何文題請參照最上面三個網址**
-
-   # **若還有問題麻煩開啟Issues我們盡可能的幫助您**
-   
 ---
 
 # 參考文章
@@ -597,3 +593,5 @@ https://gilberttanner.com/blog/convert-your-tensorflow-object-detection-model-to
 https://gilberttanner.com/blog/creating-your-own-objectdetector
 
 https://gilberttanner.com/blog/installing-the-tensorflow-object-detection-api
+
+*最後感謝在這專案上協助的所有人*
