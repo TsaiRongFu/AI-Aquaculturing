@@ -330,13 +330,19 @@ def class_text_to_int(row_label):
 
     ![generate_tfrecord_file.py](https://github.com/cairongfu/AI-Aquaculturing/blob/main/ReadmePicture/generate_tfrecord_file.JPG)
 
+### **把剛剛轉出來的test.record train.record檔移至models\research\object_detection底下**
+
 ---
 
 <br>
 
 ## 接著配置訓練檔案
 
-* 首先把剛剛轉出來的test.record train.record檔移至models\research\object_detection底下
+* 首先到以下找您要訓練的模型預訓練檔並且下載下來放置在你喜愛的路徑下
+
+  ### [Tensorflow Zoo](https://github.com/tensorflow/models/blob/master/research/object_detection/g3doc/tf1_detection_zoo.md)
+
+  <br>
 
 * 接著創建一個labelmap.pdtxt檔案如下範例(可拿下面labelmap.pbtxt改)
 
@@ -372,55 +378,56 @@ item {
   - Key入以下指令
   - `mkdir training`
 - **接著到models\research\object_detection\samples\configs底下找到您要的訓練模型config複製到剛剛新增的training資料夾內**
+
 - **剛剛上一步驟中的labelmap.pdtxt也放入新增的training資料夾內**
+
+- 修改config檔設定
+
+    - model 內的 num_classes數量由您要訓練的label決定
+
+      ```
+      model {
+        ssd {
+          num_classes: 1
+          box_coder {
+            faster_rcnn_box_coder {
+              y_scale: 10.0
+              x_scale: 10.0
+              height_scale: 5.0
+              width_scale: 5.0
+            }
+          }
+      ```
+
+  - fine_tune_checkpoint: 路徑就設定在剛剛下載的tensorflow zoo下載的模型位置
+在最後加上model.ckpt
+
+    ```
+    fine_tune_checkpoint: "C:/Users/RONGF/Desktop/modle/models/research/object_detection/ssdlite_mobilenet_v2_coco_2018_05_09/model.ckpt"
+    ```
+
+  - input_path:放入您的train.record路徑
+
+  - label_map_path:放入您的labelmap.pbtxt路徑
+
+    ```
+    train_input_reader: {
+      tf_record_input_reader {
+        input_path: "C:/Users/RONGF/Desktop/modle/train.record"
+      }
+      label_map_path: "C:/Users/RONGF/Desktop/modle/models/research/object_detection/training/labelmap.pbtxt"
+    }
+    ```
 
 ### 目前EdgeTpu僅接受sd_mobilenet_v2_quantized_300x300_coco否則訓練出來模型會有問題
 
 ### 請依照手邊系統適配之模型下去訓練
-### 接著到以下找您要訓練的模型預訓練檔並且下載下來放置在你喜愛的路徑下
-
-### [Tensorflow Zoo](https://github.com/tensorflow/models/blob/master/research/object_detection/g3doc/tf1_detection_zoo.md)
-
-修改config檔設定
-
-model 內的 num_classes數量由您要訓練的label決定
-
-```
-model {
-  ssd {
-    num_classes: 1
-    box_coder {
-      faster_rcnn_box_coder {
-        y_scale: 10.0
-        x_scale: 10.0
-        height_scale: 5.0
-        width_scale: 5.0
-      }
-    }
-```
----
-
-fine_tune_checkpoint: 路徑就設定在剛剛下載的tensorflow zoo下載的模型位置
-在最後加上model.ckpt
-
-```
-fine_tune_checkpoint: "C:/Users/RONGF/Desktop/modle/models/research/object_detection/ssdlite_mobilenet_v2_coco_2018_05_09/model.ckpt"
-```
 
 ---
 
- input_path:放入您的train.record路徑
 
- label_map_path:放入您的labelmap.pbtxt路徑
 
-```
-train_input_reader: {
-  tf_record_input_reader {
-    input_path: "C:/Users/RONGF/Desktop/modle/train.record"
-  }
-  label_map_path: "C:/Users/RONGF/Desktop/modle/models/research/object_detection/training/labelmap.pbtxt"
-}
-```
+
 
 ---
 
