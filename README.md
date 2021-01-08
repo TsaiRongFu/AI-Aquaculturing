@@ -39,9 +39,9 @@ Thematic works of four students from the Department of Information Management, N
     
      ![conda env list](https://github.com/cairongfu/AI-Aquaculturing/blob/main/ReadmePicture/Anaconda_Change_Env.JPG)<br><br>
   
-### **更多關於Anaconda管理環境指令可以參考以下網址**
+    ### **更多關於Anaconda管理環境指令可以參考以下網址**
 
-### [Anaconda Managing Environments](https://docs.conda.io/projects/conda/en/latest/user-guide/tasks/manage-environments.html)<br><br>
+    ### [Anaconda Managing Environments](https://docs.conda.io/projects/conda/en/latest/user-guide/tasks/manage-environments.html)<br><br>
 
 4. 此步驟是為了配置必要套件，部分套件Anaconda安裝時已自動配置，保險起見還是在全部輸入一次。
 
@@ -179,8 +179,6 @@ export PYTHONPATH=/home/itriedgetpunpust/ipynb/TsaiJungFu/cai-train-path/models:
 ![object_detection_tutorial](https://github.com/cairongfu/AI-Aquaculturing/blob/main/ReadmePicture/object_detection_tutorial.png)
 
 ---
-
-<br>
 
 # 圖像標記
 
@@ -330,9 +328,7 @@ def class_text_to_int(row_label):
 
 ---
 
-<br>
-
-## 接著配置訓練檔案
+## 配置訓練檔案
 
 * 首先到以下找您要訓練的模型預訓練檔並且下載下來解壓縮後放置在你喜愛的路徑下
 
@@ -436,8 +432,6 @@ def class_text_to_int(row_label):
 
 ---
 
-<br>
-
 ## 開始進行模型訓練
 
 到models\research\object_detection\legacy\train複製train.py檔到models\research\object_detection目錄下
@@ -488,8 +482,6 @@ def class_text_to_int(row_label):
   
 ---
 
-<br>
-
 ## 凍結出模型
 
 當模型訓練到您要的loss值之後Ctrl+c關閉後在training資料夾內會出現model.ckpt-xxxxx檔
@@ -505,21 +497,30 @@ def class_text_to_int(row_label):
       python export_tflite_ssd_graph.py --input_type image_tensor --pipeline_config_path training/ssdlite_mobilenet_v2_coco.config --trained_checkpoint_prefix training/model.ckpt-XXXX --output_directory ssd_graph
       ```
 
-**成功之後會在object_detection 資料夾內出現ssd_graph資料夾裡面會有tflite_graph.pb檔接著開始轉型成tflite檔**
+### **成功之後會在object_detection 資料夾內出現ssd_graph資料夾裡面會有tflite_graph.pb檔**
 
 ---
+
+## 開始pd檔轉型成tflite檔，建置新的Anaconda Managing environments
+
+如同一開始所教的配置新的環境，建議您在Anaconda建置新的環境。
+
+- 打開您的Command OR Terminal並輸入以下指令：
+    - conda create -n tensorflow pip python=3.6
+    - conda activate tensorflow
+
+  #### **更多關於Anaconda管理環境**
+
+  #### [Anaconda Managing Environments](https://docs.conda.io/projects/conda/en/latest/user-guide/tasks/manage-environments.html)
+
+<br>
+
 參照下列網址建置Tensorflow
 
-建議您在anaconda建置新的環境參照下列網址做
-https://docs.conda.io/projects/conda/en/latest/user-guide/tasks/manage-environments.html
-
-conda create -n tensorflow pip python=3.6
-conda activate tensorflow
-
-接著再跟著下列網址做
 https://www.tensorflow.org/install/source_windows
 
 首先配置環境安裝以下檔案
+* 以下網址若失效至專案檔裡Bullding資料夾內找
 
 [vs_buildtools.exe](https://trello-attachments.s3.amazonaws.com/5e6856f39a79a12665199a15/5e95106ac42ee761ec1a911d/51081d5a8b8ec951efe2f2afadf8aa7c/vs_buildtools.exe) 
 
@@ -531,37 +532,46 @@ https://www.tensorflow.org/install/source_windows
 
 [Tensorflow](https://github.com/tensorflow/tensorflow/archive/v1.15.0.zip)
 
-###**當您執行到**
+## 此處重要的點在於您的版本要對應正確！多加留意，很重要所以說三次
+
+## 此處重要的點在於您的版本要對應正確！多加留意，很重要所以說三次
+
+## 此處重要的點在於您的版本要對應正確！多加留意，很重要所以說三次
+
+<br>
+
+### **當您執行到**
 ```
 bazel build //tensorflow/tools/pip_package:build_pip_package
 ```
-###**最後報錯這是沒有關西的**
+### **最後報錯這是沒有關西的**
 
----
+<br>
 
-接著不要關掉Command執行
+### **接著不要關掉Command OR Terminal 繼續執行**
 
 ```
 bazel run --config=opt tensorflow/lite/toco:toco
 ```
-###**這部分會Build成功!!**
+### **這部分會Build成功！！有任何問題請參照Tensorflow官方教學[Tensorflow for Windows](https://www.tensorflow.org/install/source_windows)**
 
-接著把剛剛訓練出來的pd檔放到MSYS2安裝路徑下msys64資料夾底下
+<br>
+
+### **接著把剛剛訓練出來的pd檔放到MSYS2安裝路徑下msys64資料夾底下**
 
 ---
 
-###**一樣Command執行以下指令**
+### **一樣Command OR Terminal執行以下指令**
 
-如果之前已build過的人請到當時 git clone 的位置底下
+**如果之前已build過的人請到當時 git clone 的位置底下，並切換Anaconda環境至tensorflow下**
 
-###**注意下面路徑和檔案名稱請對應自身的路徑和名稱如還不懂請參照下列網址2.3點使用TOCO創建優化的TensorFlow Lite模型步驟**
- https://gilberttanner.com/blog/convert-your-tensorflow-object-detection-model-to-tensorflow-lite
+#### **注意下面路徑和檔案名稱請對應自身的路徑和名稱如還不懂請參照下列網址2.3點使用TOCO創建優化的TensorFlow Lite模型步驟[TensorFlow Lite](https://gilberttanner.com/blog/convert-your-tensorflow-object-detection-model-to-tensorflow-lite)**
 
 ``` 
 bazel run --config=opt tensorflow/lite/toco:toco -- --input_file=/tflite_graph.pb --output_file=/detect.tflite --input_shapes=1,300,300,3 --input_arrays=normalized_input_image_tensor --output_arrays=TFLite_Detection_PostProcess,TFLite_Detection_PostProcess:1,TFLite_Detection_PostProcess:2,TFLite_Detection_PostProcess:3 --inference_type=QUANTIZED_UINT8 --mean_values=128 --std_values=128 --change_concat_input_ranges=false --allow_custom_ops --default_ranges_min=0 --default_ranges_max=255
 ```
 
-##**成功之後會在MSYS2安裝路徑下msys64資料夾底下出現detect.tflite檔檔案大小會縮小表成功**
+### **成功之後會在MSYS2安裝路徑下msys64資料夾底下出現detect.tflite檔檔案大小會縮小表成功**
 
 ---
 
