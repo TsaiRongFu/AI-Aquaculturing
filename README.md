@@ -530,15 +530,6 @@ https://www.tensorflow.org/install/source_windows
 
   [Tensorflow](https://github.com/tensorflow/tensorflow/archive/v1.15.0.zip)
 
-### 此處重要的點在於您的版本要對應正確！多加留意，很重要所以說三次
-
-### 此處重要的點在於您的版本要對應正確！多加留意，很重要所以說三次
-
-### 此處重要的點在於您的版本要對應正確！多加留意，很重要所以說三次
-
-<br>
----
-
 ### **當您執行到**
 ```
 bazel build //tensorflow/tools/pip_package:build_pip_package
@@ -557,6 +548,14 @@ bazel run --config=opt tensorflow/lite/toco:toco
 <br>
 
 ### **接著把剛剛訓練出來的pd檔放到MSYS2安裝路徑下msys64資料夾底下**
+
+<br>
+
+### 此處重要的點在於您的版本要對應正確！多加留意，很重要所以說三次
+
+### 此處重要的點在於您的版本要對應正確！多加留意，很重要所以說三次
+
+### 此處重要的點在於您的版本要對應正確！多加留意，很重要所以說三次
 
 ---
 
