@@ -588,6 +588,7 @@ bazel run --config=opt tensorflow/lite/toco:toco -- --input_file=/tflite_graph.p
 
 ---
 # AI_Aquaculturing laravel智慧觀賞魚輔助系統網站 網頁教學
+此網頁專案位於 AI-Aquaculturing/AI_Aquaculturing_laravel/
 此專案在controller連結了mysql資料庫,接著利用[Server-Sent Events](https://en.wikipedia.org/wiki/Server-sent_events)將資料推送到前端,並使用[Chart.js](https://www.chartjs.org/)此JavaScript圖表即時視覺化顯示最新觀賞魚資訊給使用者觀看
 
 ## 資料庫數據
