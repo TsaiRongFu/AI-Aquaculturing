@@ -1,0 +1,13 @@
+Edge TPU Compiler version 15.0.340273435
+Input: koifish_detect-100w.tflite
+Output: koifish_detect-100w_edgetpu.tflite
+
+Operator                       Count      Status
+
+ADD                            10         Mapped to Edge TPU
+CUSTOM                         1          Operation is working on an unsupported data type
+RESHAPE                        13         Mapped to Edge TPU
+CONCATENATION                  2          Mapped to Edge TPU
+LOGISTIC                       1          Mapped to Edge TPU
+DEPTHWISE_CONV_2D              17         Mapped to Edge TPU
+CONV_2D                        55         Mapped to Edge TPU
