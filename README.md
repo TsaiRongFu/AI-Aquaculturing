@@ -446,28 +446,33 @@ def class_text_to_int(row_label):
 
 到models\research\object_detection\legacy\train複製train.py檔到models\research\object_detection目錄下
 
-- 打開Command :
- - cd models\research\object_detection
- - Key入以下指令
- - 如下路徑請自行轉換成您自己的路徑-和自己的config檔名稱
+- 打開您的Command OR Terminal並輸入以下指令：
+  - cd models\research\object_detection
+  - Key入以下指令
+  - 如下路徑請自行轉換成您自己的路徑-和自己的config檔名稱
 
-```
-python train.py --logtostderr --train_dir=training/ --pipeline_config_path=training/config模型名稱.config
-```
+    ```
+    python train.py --logtostderr --train_dir=training/ --pipeline_config_path=training/config模型名稱.config
+    ```
+
+### 沒有報任何錯誤代表您成功開始訓練囉！！
 
 ---
 
- -  No module named 'absl'
-  - cmd key 
-  - pip install absl-py 
+### 以下是訓練時發生時的幾種樣態及Debug方法
+(目前本人我遇到的情況，每個人環境都可能不一樣所以並非全部錯誤都會在下面)
 
- - No module named 'tensorflow'
-  - cmd key
-  - pip install tensorflow==1.15  
+-  No module named 'absl'
+    - 打開您的Command OR Terminal並輸入以下指令：
+      - `pip install absl-py `
+
+- No module named 'tensorflow'
+    - 打開您的Command OR Terminal並輸入以下指令：
+      - `pip install tensorflow==1.15  `
  
- -  No module named 'pycocotools'
-  - cmd key
-  - pip install "git+https://github.com/philferriere/cocoapi.git#egg=pycocotools&subdirectory=PythonAPI"
+-  No module named 'pycocotools'
+    - cmd key
+      - `pip install "git+https://github.com/philferriere/cocoapi.git#egg=pycocotools&subdirectory=PythonAPI"`
 
  -  cannot import name 'anchor_generator_pb2' from 'object_detection.protos' (C:\Users\Eggs\anaconda3\lib\site-packages\object_detection-0.1-py3.7.egg\object_detection\protos\__init__.py)
   - cmd key
