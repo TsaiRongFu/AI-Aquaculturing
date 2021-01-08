@@ -261,11 +261,11 @@ def main():
   - Key入以下指令
   - python xml_to_csv.py
 
-**Successfully converted xml to csv.後會在您的images資料夾內出現兩個檔分別如下：**
+**Successfully converted xml to csv後會在您的images資料夾內出現兩個檔分別如下：**
 
-`label_test`
+`label_test.csv`
 
-`label_train`
+`label_train.csv`
 
 ---
 
