@@ -459,7 +459,9 @@ def class_text_to_int(row_label):
 
 ---
 
-### 以下是訓練時發生時的幾種樣態及Debug方法
+ <br>
+ 
+ ### 以下是訓練時發生時的幾種樣態及Debug方法
 (目前本人我遇到的情況，每個人環境都可能不一樣所以並非全部錯誤都會在下面)
 
 -  No module named 'absl'
@@ -472,7 +474,7 @@ def class_text_to_int(row_label):
  
 -  No module named 'pycocotools'
     - cmd key
-      - `pip install "git+https://github.com/philferriere/cocoapi.git#egg=pycocotools&subdirectory=PythonAPI"`
+      - ```pip install "git+https://github.com/philferriere/cocoapi.git#egg=pycocotools&subdirectory=PythonAPI"```
 
  -  cannot import name 'anchor_generator_pb2' from 'object_detection.protos' (C:\Users\Eggs\anaconda3\lib\site-packages\object_detection-0.1-py3.7.egg\object_detection\protos\__init__.py)
   - cmd key
