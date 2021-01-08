@@ -282,8 +282,8 @@ def main():
 **注意以下code其中的 def class_text_to_int部分，這部分需要依照您要訓練的label新增，這邊我只訓練一類故此只有 Clownfish如要新增多label就自行增加**
  
 ```
-if  row_label == <b>'label name'</b>:
-       return <b>lable number(直接填寫數字)如下code</b>
+if  row_label == 'label name':
+       return lable number(直接填寫數字)如下code
     elseif:
        ......
     else:
@@ -298,10 +298,10 @@ if  row_label == <b>'label name'</b>:
 
 ```
 def class_text_to_int(row_label):
-★   if row_label == 'Clownfish':
-★     return 1
-      else:
-         None
+★  if row_label == 'Clownfish':
+★      return 1
+    else:
+        None
 ```
 - 打開您的Command OR Terminal並輸入以下指令：
   - cd 到您存放generate_tfrecord.py目錄底下
