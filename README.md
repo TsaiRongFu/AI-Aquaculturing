@@ -566,7 +566,9 @@ bazel run --config=opt tensorflow/lite/toco:toco -- --input_file=/tflite_graph.p
 ### 此處重要的點在於您的版本要對應正確！多加留意，很重要所以說三次
 
 ### **有任何問題請參照Tensorflow官方教學[Tensorflow for Windows](https://www.tensorflow.org/install/source_windows)**
+
 ---
+## Edge Tpu Compile
 
 為了讓tflite在edage TPU上運行速度正常請參照下列文章在編譯一次模型
 
@@ -580,16 +582,18 @@ bazel run --config=opt tensorflow/lite/toco:toco -- --input_file=/tflite_graph.p
 
 ---
 
-   #**恭喜您成功完成了**
-   #**有任何文題請參照最上面三個網址**
-   #**若還有問題麻煩留言**
+   # **恭喜您成功完成了**
+
+   # **有任何文題請參照最上面三個網址**
+
+   # **若還有問題麻煩開啟Issues我們盡可能的幫助您**
+   
 ---
-# 參考這篇教學文件
+
+# 參考文章
 
 https://gilberttanner.com/blog/convert-your-tensorflow-object-detection-model-to-tensorflow-lite
 
 https://gilberttanner.com/blog/creating-your-own-objectdetector
 
 https://gilberttanner.com/blog/installing-the-tensorflow-object-detection-api
-
-python train.py --logtostderr --train_dir=training/ --pipeline_config_path=training/ssd_mobilenet_v2_quantized_300x300_coco.config
