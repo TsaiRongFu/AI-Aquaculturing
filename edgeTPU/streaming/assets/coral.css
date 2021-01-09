@@ -1,0 +1,24 @@
+@font-face {
+  font-family: Lora-Regular;
+  src: url(fonts/Lora-Regular.ttf);
+}
+
+@font-face {
+  font-family: Roboto-Regular;
+  src: url(fonts/Roboto-Regular.ttf);
+}
+
+body {
+  padding-top:20px;
+  padding-left:20px;
+  font-family: Roboto-Regular;
+}
+
+h1 {
+  font-family: Lora-Regular;
+}
+
+a {
+  color:#006B68;
+  font-weight: bolder;
+}
