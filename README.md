@@ -863,6 +863,155 @@ bash flash.sh
 帳號密碼預設都是mendel
 
 ---
+# 更新TPU software以及運行範例模型
+```
+mdt shell #進入TPU終端
+```
+## 確認板子有沒有更新到最新
+```
+sudo apt-get update
+sudo apt-get dist-upgrade
+```
+## 之後安裝TensorFlow Lite
+```
+pip3 install https://dl.google.com/coral/python/tflite_runtime-2.1.0.post1-cp37-cp37m-linux_aarch64.whl
+```
+## 運行demo
+```
+edgetpu_demo --stream
+若是沒有螢幕連接（使用電腦mdt操作tpu） 瀏覽器輸入 http://192.168.100.2:4664/
+```
+## 跑TensorFlow Lite模型
+### Step1 下載範例
+```
+sudo apt-get install git
+
+mkdir coral && cd coral
+
+git clone https://github.com/google-coral/tflite.git
+```
+### Step 2 下載分類器依賴項
+```
+cd tflite/python/examples/classification
+
+bash install_requirements.sh
+```
+### Step3 運行
+```
+python3 classify_image.py \
+--model models/mobilenet_v2_1.0_224_inat_bird_quant_edgetpu.tflite \
+--labels models/inat_bird_labels.txt \
+--input images/parrot.jpg
+```
+---
+----INFERENCE TIME----
+Note: The first inference on Edge TPU is slow because it includes loading the model into Edge TPU memory.
+13.6ms
+2.8ms
+2.7ms
+2.7ms
+2.7ms
+
+-------RESULTS--------
+Ara macao (Scarlet Macaw): 0.76562
+---
+看到這個代表已成功
+---
+# Edge TPU 連接相機以及運行範例
+## 明白自己的usb相機支援格式 （順便檢查有沒有成功連接
+```
+v4l2-ctl --list-formats-ext --device /dev/video1
+```
+應出現類似
+---
+ioctl: VIDIOC_ENUM_FMT
+Type: Video Capture
+
+[0]: 'MJPG' (Motion-JPEG, compressed)
+    Size: Discrete 640x480
+        Interval: Discrete 0.033s (30.000 fps)
+    Size: Discrete 320x240
+        Interval: Discrete 0.033s (30.000 fps)
+    Size: Discrete 800x600
+        Interval: Discrete 0.033s (30.000 fps)
+    Size: Discrete 1024x768
+        Interval: Discrete 0.033s (30.000 fps)
+    Size: Discrete 1280x720
+        Interval: Discrete 0.033s (30.000 fps)
+    Size: Discrete 1280x1024
+        Interval: Discrete 0.033s (30.000 fps)
+    Size: Discrete 1600x1200
+        Interval: Discrete 0.067s (15.000 fps)
+    Size: Discrete 1920x1080
+        Interval: Discrete 0.067s (15.000 fps)
+    Size: Discrete 2048x1536
+        Interval: Discrete 0.067s (15.000 fps)
+    Size: Discrete 2592x1944
+        Interval: Discrete 0.067s (15.000 fps)
+    Size: Discrete 640x480
+        Interval: Discrete 0.033s (30.000 fps)
+[1]: 'YUYV' (YUYV 4:2:2)
+    Size: Discrete 640x480
+        Interval: Discrete 0.033s (30.000 fps)
+    Size: Discrete 320x240
+        Interval: Discrete 0.033s (30.000 fps)
+    Size: Discrete 800x600
+        Interval: Discrete 0.033s (30.000 fps)
+    Size: Discrete 1024x768
+        Interval: Discrete 0.067s (15.000 fps)
+    Size: Discrete 1280x720
+        Interval: Discrete 0.133s (7.500 fps)
+    Size: Discrete 1280x1024
+        Interval: Discrete 0.133s (7.500 fps)
+    Size: Discrete 1600x1200
+        Interval: Discrete 0.333s (3.000 fps)
+    Size: Discrete 1920x1080
+        Interval: Discrete 0.333s (3.000 fps)
+    Size: Discrete 2048x1536
+        Interval: Discrete 0.333s (3.000 fps)
+    Size: Discrete 2592x1944
+        Interval: Discrete 0.333s (3.000 fps)
+    Size: Discrete 640x480
+        Interval: Discrete 0.033s (30.000 fps)
+---
+
+## 設置路徑變量
+```
+export DEMO_FILES="$HOME/demo_files"
+```
+下載以下
+```
+The image classification model and labels file
+wget -P ${DEMO_FILES}/ https://github.com/google-coral/edgetpu/raw/master/test_data/mobilenet_v2_1.0_224_quant_edgetpu.tflite
+
+wget -P ${DEMO_FILES}/ https://github.com/google-coral/edgetpu/raw/master/test_data/imagenet_labels.txt
+
+The face detection model (does not require a labels file)
+wget -P ${DEMO_FILES}/ https://github.com/google-coral/edgetpu/raw/master/test_data/mobilenet_ssd_v2_face_quant_postprocess_edgetpu.tflite
+```
+## 使用HDMI觀看 人臉辨識demo
+```
+edgetpu_detect \
+--source /dev/video1video1:YUY2:1024x768:15/1 \
+--model ${DEMO_FILES}/mobilenet_ssd_v2_face_quant_postprocess_edgetpu.tflite
+```
+### 使用網址觀看 人臉辨識demo （http://192.168.100.2:4664/
+```
+edgetpu_detect_server \
+--source /dev/video1:YUY2:1024x768:15/1 \
+--model ${DEMO_FILES}/mobilenet_ssd_v2_face_quant_postprocess_edgetpu.tflite
+```
+## 解釋指令意義
+---
+在自--source變量中（僅適用於USB攝像機），必須使用在USB攝像機設置期間打印的值指定4個參數：
+/dev/video1是設備文件。如果是唯一連接的相機，則應該相同。
+YUY2是唯一受支持的像素格式（與相同YUYV）。
+800x600是圖像分辨率。這必須與您的相機列出的分辨率之一匹配。
+24/1是幀速率。它還必須與給定格式的列出的FPS值之一匹配。
+---
+運行成功都應該看到底下有
+INFO:edgetpuvision.streaming.server:Listening on ports tcp: 4665, web: 4664, annexb: 4666
+---
 # EdgeTPU_Coral建立Swap分區
 此步驟提供給安裝工具，內存不足導致失敗時使用
 每次開機均得重新掛載SWAP分區
