@@ -623,7 +623,7 @@ data = ('1',"'"+positsion+"'","'"+str(thistime)+"'")
 ```
 
 ## 執行本地物件偵測
-影像模型先命名為detect_edgetpu.tflite，放在edgeTPU根目錄下，其中--displaymode window是視窗化執行的意思，不輸入會以全螢幕執行
+影像模型先命名為detect_edgetpu.tflite，放在EdgeTpu根目錄下，其中--displaymode window是視窗化執行的意思，不輸入會以全螢幕執行
 ```
 edgetpu_detect --source /dev/video1:YUY2:1280x720:10/1 --model detect_edgetpu.tflite --displaymode window
 ```
@@ -640,7 +640,7 @@ web_port=4664
 ### 最後執行起來並在瀏覽器中輸入edgetpu的實體ip及設定好的port就能及時觀看物件偵測的即時串流了
 
 ## 執行server物件偵測(外部可連)
-影像模型先命名為detect_edgetpu.tflite，放在edgeTPU根目錄下
+影像模型先命名為detect_edgetpu.tflite，放在EdgeTpu根目錄下
 ```
 edgetpu_detect_server \
 --source /dev/video1:YUY2:1280x720:24/1  \
