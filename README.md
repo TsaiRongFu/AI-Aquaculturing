@@ -587,8 +587,8 @@ bazel run --config=opt tensorflow/lite/toco:toco -- --input_file=/tflite_graph.p
 ---
 
 # Edge Tpu 執行及環境介紹
-本專案位於Edge Tpu資料夾中
-這些檔案是本專案編輯過的edge tpu中，目錄在 /usr/lib/python3/dist-packages/edgetpuvision/ 底下的檔案，主要有異動的檔案有detect.py及server.py
+此專案位於AI-Aquaculturing/edgeTPU資料夾中，主要是Edge Tpu執行影像偵測的設定
+這些是本專案編輯過的edgetpu檔案，目錄是在 /usr/lib/python3/dist-packages/edgetpuvision/ 底下，主要有異動的檔案有detect.py及server.py
 
 ## 須先在Edge Tpu中安裝的套件
 ```
