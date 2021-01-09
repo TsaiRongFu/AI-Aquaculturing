@@ -1,7 +1,7 @@
-# edgeTPU 執行及環境介紹
-這些檔案是本專案編輯過的edge tpu中，目錄在 /usr/lib/python3/dist-packages/edgetpuvision/ 底下的檔案，主要有異動的檔案有detect.py及server.py
+# Edge Tpu 執行及環境介紹
+這些是本專案編輯過的edgetpu檔案，目錄是在 /usr/lib/python3/dist-packages/edgetpuvision/ 底下，主要有異動的檔案有detect.py及server.py
 
-## 須先在edgeTPU中安裝的套件
+## 須先在Edge Tpu中安裝的套件
 ```
 pip3 install pytz
 pip3 install mysql-connector-python
@@ -34,7 +34,7 @@ data = ('1',"'"+positsion+"'","'"+str(thistime)+"'")
 ```
 
 ## 執行本地物件偵測
-影像模型先命名為detect_edgetpu.tflite，放在edgeTPU根目錄下，其中--displaymode window是視窗化執行的意思，不輸入會以全螢幕執行
+影像模型先命名為detect_edgetpu.tflite，放在EdgeTpu根目錄下，其中--displaymode window是視窗化執行的意思，不輸入會以全螢幕執行
 ```
 edgetpu_detect --source /dev/video1:YUY2:1280x720:10/1 --model detect_edgetpu.tflite --displaymode window
 ```
@@ -51,12 +51,9 @@ web_port=4664
 ### 最後執行起來並在瀏覽器中輸入edgetpu的實體ip及設定好的port就能及時觀看物件偵測的即時串流了
 
 ## 執行server物件偵測(外部可連)
-影像模型先命名為detect_edgetpu.tflite，放在edgeTPU根目錄下
+影像模型先命名為detect_edgetpu.tflite，放在EdgeTpu根目錄下
 ```
 edgetpu_detect_server \
 --source /dev/video1:YUY2:1280x720:24/1  \
 --model detect_edgetpu.tflite
 ```
-
-
-
