@@ -795,7 +795,7 @@ fastboot 0
 ```
 < waiting for any device >
 ```
-## 刷入系統
+## 首次刷入系統
 ### Step 1：連接Type C （OTG插口
 開啟新的終端機界面 輸入以下
 ```
@@ -824,6 +824,43 @@ bash flash.sh
 ```
 帳號密碼都是mendel
 ```
+
+## 重新刷入系統
+當您系統出問題導致無法順利執行時，可以嘗試此步驟
+首先將tpu開關用成上下上上
+
+### Step1：連接micro usb 進入串口界面 請勿上電
+```
+sudo screen /dev/ttyUSB0 115200
+```
+此時顯示空白正常
+### Step2：將sd卡刷入重刷程序
+請先安裝balena [balena載點](https://www.balena.io/etcher/)
+將資料夾mendel-enterprise-day-13 裡面的recovery.img刷入
+### Step3：插入sd卡 以及插入OTC並上電（插入pwr）開新終端機界面，並輸入
+```
+fastboot devices
+```
+顯示類似
+1b0741d6f0609912        fastboot  代表成功
+
+### Step3：打開新的終端機介面，並輸入
+```
+cd ~/Downloads
+```
+```
+curl -O https://dl.google.com/coral/mendel/enterprise/mendel-enterprise-day-13.zip
+```
+```
+unzip mendel-enterprise-day-13.zip \
+&& cd mendel-enterprise-day-13
+```
+```
+bash flash.sh
+```
+顯示Finished代表成功
+### Step4：將tpu用回上下下下並輸入帳號密碼 成功重刷
+帳號密碼預設都是mendel
 
 ---
 # 物聯網_ESP32
