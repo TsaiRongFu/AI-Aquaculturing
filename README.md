@@ -863,6 +863,160 @@ bash flash.sh
 帳號密碼預設都是mendel
 
 ---
+# EdgeTPU_Coral建立Swap分區
+此步驟提供給安裝工具，內存不足導致失敗時使用
+每次開機均得重新掛載SWAP分區
+### 查看硬碟資訊
+```
+df #全部
+df /dev/xxxx #指定xxxx硬碟
+```
+### fdisk not found錯誤碼
+目前狀況是因環境變數沒有設置導致
+可以先輸入
+```
+whereis fdisk
+```
+確定有沒有這個套件
+### 進入/etc資料夾
+```
+cd ..
+cd ..
+cd /etc
+```
+### 找到一個檔案叫做bash.bashrc並編輯
+```
+sudo nano bash.bashrc
+```
+### 在最後面輸入
+```
+PATH=$PATH:$HOME/bin:/sbin
+#ctrl+O 保存
+#ctrl+X離開
+```
+### 重新啟動tpu，並查詢PATH
+```
+echo $PATH
+```
+會發現:sbin已經加入
+### 切割分區
+首先查看硬碟資訊
+```
+sudo fdisk -l
+```
+查看記憶卡資訊
+類似如下
+```
+Disk /dev/mmcblk1: 29.7 GiB, 31914983424 bytes, 62333952 sectors
+Units: sectors of 1 * 512 = 512 bytes
+Sector size (logical/physical): 512 bytes / 512 bytes
+I/O size (minimum/optimal): 512 bytes / 512 bytes
+```
+### 使用fdisk工具進入編輯
+```
+sudo fdisk  /dev/mmcblk1
+```
+出現
+---
+Welcome to fdisk (util-linux 2.33.1).
+Changes will remain in memory only, until you decide to write them.
+Be careful before using the write command.
+
+Device does not contain a recognized partition table.
+Created a new DOS disklabel with disk identifier 0x64cb75f7.
+
+Command (m for help): 
+---
+查看選項
+```
+m #輸入enter
+```
+```
+s #create a new empty Sun partition table
+```
+### 首先刪除原本磁區
+```
+D #按ENTER輸入
+```
+### 建立新磁區
+
+n
+Partition type
+p primary (0 primary, 0 extended, 4 free)
+e extended (container for logical partitions)
+
+Select (default p):
+```
+p /只要建立一個因此選擇主要分割區選p
+```
+Partition number (1-4, default 1):
+```
+預設排序就行 直接enter
+```
+First sector (2048-62333951, default 2048):
+```
+一樣預設就行 Enter
+```
+Last sector, +/-sectors or +/-size{K,M,G,T,P} (2048-62333951, default 62333951):
+選擇磁區大小 +xG 像我這裡要6g
+```
++6G
+```
+之後輸入w保存並離開
+```
+w
+```
+輸入
+```
+sudo fdisk -l
+```
+可以看到新的
+---
+Device Boot Start End Sectors Size Id Type
+
+/dev/mmcblk1p1 2048 12584959 12582912 6G 83 Linux
+---
+代表成功新增磁區
+
+## 格式化並掛載磁區
+
+### 新建完一個磁區後必須格式化後才能使用
+```
+sudo mkfs.ext4 /dev/mmcblk1p1
+```
+### 先進入底層 建立一個新資料夾 用來掛載磁區
+```
+cd ..
+cd ..
+sudo mkdir mountfile
+```
+### 掛載新磁區
+```
+sudo mount /dev/mmcblk1p1 /mountfile
+```
+
+## 在掛載的分割區中新建一個swap file 並應用套用
+## 查看swap
+```
+swapon -s
+or
+free -h
+```
+
+## 建立一個空白檔案 dd工具會跑一陣子 請耐心等待
+```
+sudo dd if=/dev/zero of=./mem_4G.swp bs=4096 counts=1048576
+```
+
+## 建立swap交換區檔案
+```
+sudo mkswap ./mem_4G.swp
+```
+## 啟用swap
+```
+sudo swapon ./mem_4G.swp
+```
+---
 # 物聯網_ESP32
 本專案使用ESP32並與Mysql資料庫聯動
 
@@ -910,6 +1064,7 @@ char pass[] = "12345678910";  // your network password
 ```
 注意! ESP32的12腳位燒入時不能插上，否則會導致燒錄失敗
 ```
+
 ---
 # LINE BOT
 
