@@ -586,10 +586,10 @@ bazel run --config=opt tensorflow/lite/toco:toco -- --input_file=/tflite_graph.p
 
 ---
 
-# edgeTPU 執行及環境介紹
+# Edge Tpu 執行及環境介紹
 這些檔案是本專案編輯過的edge tpu中，目錄在 /usr/lib/python3/dist-packages/edgetpuvision/ 底下的檔案，主要有異動的檔案有detect.py及server.py
 
-## 須先在edgeTPU中安裝的套件
+## 須先在Edge Tpu中安裝的套件
 ```
 pip3 install pytz
 pip3 install mysql-connector-python
