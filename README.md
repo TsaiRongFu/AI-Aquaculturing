@@ -746,6 +746,86 @@ If you discover a security vulnerability within Laravel, please send an e-mail t
 The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
 
 ---
+# 物聯網_EdgeTPU CoralBroad
+本專案之影像辨識硬體使用Google開發的EdgeTPU CoralBroad，在開始前須先安裝刷入系統
+## 環境配置
+首次刷入系統，請注意開關方向，順序為on off off off![image](https://trello-attachments.s3.amazonaws.com/5e6b1f00699f7c5e70677191/5e6dd610d3d4212bf29753fb/72d420ecde8b4c8969025aba79902f5b/%E9%96%8B%E9%97%9C.png)
+並請先準備一台具備Linux系統的主機，並且安裝下列工具
+安裝fastboot
+```
+sudo apt-get install fastboot
+```
+安裝mdt工具
+```
+pip3 install --user mendel-development-tool
+```
+安裝Screen工具
+```
+sudo apt-get install screen
+```
+
+### Step1：開啟終端機介面，添加udev規則
+```
+sudo sh -c "echo 'SUBSYSTEM==\"usb\", ATTR{idVendor}==\"0525\", MODE=\"0664\", \
+GROUP=\"plugdev\", TAG+=\"uaccess\"' >> /etc/udev/rules.d/65-edgetpu-board.rules"
+```
+### Step2:連接micro usb
+此時會看到綠色、紅色燈亮起
+之後輸入
+```
+dmesg | grep ttyUSB
+```
+你應該會看到類似
+```
+[ 6437.706335] usb 2-13.1: cp210x converter now attached to ttyUSB0
+[ 6437.708049] usb 2-13.1: cp210x converter now attached to ttyUSB1
+```
+之後輸入指令
+```
+sudo screen /dev/ttyUSB0 115200
+```
+會進入一個完全空白的畫面屬於正常，不用擔心，請繼續下一步
+### Step3：上電（將Type-C插入pwr插口 此時應看到紅色燈亮起
+輸入
+```
+fastboot 0
+```
+讓設備進入刷機模式 即可縮小這個終端機界面
+將終端機將顯示
+```
+< waiting for any device >
+```
+## 刷入系統
+### Step 1：連接Type C （OTG插口
+開啟新的終端機界面 輸入以下
+```
+fastboot devices
+```
+出現類似 1b0741d6f0609912 fastboot 訊息代表成功
+### Step 2：下載系統檔案並刷入TPU
+
+開啟一個新的終端機界面
+```
+cd ~/Downloads
+```
+```
+curl -O https://dl.google.com/coral/mendel/enterprise/mendel-enterprise-day-13.zip
+```
+```
+unzip mendel-enterprise-day-13.zip \
+&& cd mendel-enterprise-day-13
+```
+```
+bash flash.sh
+```
+此時會看到TPU的終端機一直閃爍跑資料 代表開始刷入 等待即可
+
+## 首次登入
+```
+帳號密碼都是mendel
+```
+
+---
 # 物聯網_ESP32
 本專案使用ESP32並與Mysql資料庫聯動
 
