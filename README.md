@@ -749,7 +749,10 @@ The Laravel framework is open-sourced software licensed under the [MIT license](
 # 物聯網_EdgeTPU CoralBroad
 本專案之影像辨識硬體使用Google開發的EdgeTPU CoralBroad，在開始前須先安裝刷入系統
 ## 環境配置
-首次刷入系統，請注意開關方向，順序為on off off off![image](https://trello-attachments.s3.amazonaws.com/5e6b1f00699f7c5e70677191/5e6dd610d3d4212bf29753fb/72d420ecde8b4c8969025aba79902f5b/%E9%96%8B%E9%97%9C.png)
+首次刷入系統，請注意開關方向，順序為on off off off
+
+![image](https://trello-attachments.s3.amazonaws.com/5e6b1f00699f7c5e70677191/5e6dd610d3d4212bf29753fb/72d420ecde8b4c8969025aba79902f5b/%E9%96%8B%E9%97%9C.png)
+
 並請先準備一台具備Linux系統的主機，並且安裝下列工具
 安裝fastboot
 ```
