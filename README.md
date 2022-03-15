@@ -14,7 +14,7 @@ Four undergraduate students develop this project from the Department of Manageme
 
   另外如果您是對環境配置熟練不過的高手，可以跳過安裝Anaconda，照著接下來的教學中出現的套件自行安裝
   
-  ![Anaconda](https://www.anaconda.com/wp-content/uploads/2018/06/cropped-Anaconda_horizontal_RGB-1-600x102.png)
+  ![Anaconda](https://upload.wikimedia.org/wikipedia/en/c/cd/Anaconda_Logo.png)
 
 ---
 1. 當您安裝完成Anaconda後，我們開始創建一個新的環境
