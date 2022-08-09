@@ -4,7 +4,7 @@ This project is developed for smart aquaculture. We use a camera to capture pict
 
 Four undergraduate students develop this project from the Department of Management Information Systems (MIS), National Pingtung University of Science and Technology (NPUST), Taiwan.
 
-![mqdefault_6s](https://user-images.githubusercontent.com/12769512/183687928-77c875d5-21c8-4de1-a767-fef886080eee.gif)
+[![mqdefault_6s](https://user-images.githubusercontent.com/12769512/183687928-77c875d5-21c8-4de1-a767-fef886080eee.gif)](https://youtu.be/-lf_ijV5nYM)
 
 ## 首先配置系統環境
 
