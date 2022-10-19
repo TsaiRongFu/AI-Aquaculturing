@@ -1,7 +1,5 @@
 # AI-Aquaculturing 
 
-## 智慧水產養殖系統
-
 This project is developed for smart aquaculture. We use a camera to capture pictures of fishes in the tank. A deep neural network (MobileNet) is applied to recognize the images to identify the situation of fishes in the tank. EdgeTPU is used for edge computing. We also monitor the water quality by some environmental sensors. All the information is integrated into a website constructed by Laravel, and a Linebot is used to deliver information on mobile phones. 
 
 Four undergraduate students develop this project from the Department of Management Information Systems (MIS), National Pingtung University of Science and Technology (NPUST), Taiwan.
