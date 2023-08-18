@@ -4,10 +4,10 @@ This project is developed for smart aquaculture. We use a camera to capture pict
 
 Four undergraduate students develop this project from the Department of Management Information Systems (MIS), National Pingtung University of Science and Technology (NPUST), Taiwan.
 
-<br>![YouTube](https://img.shields.io/badge/YouTube-%23FF0000.svg?style=for-the-badge&logo=YouTube&logoColor=white)&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&thinsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;
+<br>![YouTube](https://img.shields.io/badge/YouTube-%23FF0000.svg?style=for-the-badge&logo=YouTube&logoColor=white)&thinsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;
 ![YouTube](https://img.shields.io/badge/YouTube-%23FF0000.svg?style=for-the-badge&logo=YouTube&logoColor=white)
 
-[![mqdefault_9s](https://github.com/TsaiRongFu/AI-Aquaculturing/assets/12769512/add062df-2015-4e04-9ebb-0049e28c1626)](https://youtu.be/tiaQAZMkwLs)&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;[![mqdefault_6s](https://user-images.githubusercontent.com/12769512/183687928-77c875d5-21c8-4de1-a767-fef886080eee.gif)](https://youtu.be/-lf_ijV5nYM)
+[![mqdefault_9s](https://github.com/TsaiRongFu/AI-Aquaculturing/assets/12769512/add062df-2015-4e04-9ebb-0049e28c1626)](https://youtu.be/tiaQAZMkwLs)&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;[![mqdefault_6s](https://user-images.githubusercontent.com/12769512/183687928-77c875d5-21c8-4de1-a767-fef886080eee.gif)](https://youtu.be/-lf_ijV5nYM)
 
 ## 首先配置系統環境
 
